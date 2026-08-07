@@ -48,6 +48,17 @@ h1{font-size:22px;font-weight:600;margin-bottom:4px}
 .footer{margin-top:24px;font-size:12px;color:#999;text-align:center}
 .footer a{color:#2563EB;text-decoration:none}
 .scope-badge{display:inline-block;background:#e8f0fe;color:#2563EB;font-size:11px;padding:2px 8px;border-radius:4px;font-weight:500;margin-left:8px}
+.cat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:12px;margin-top:8px}
+.cat-card{background:#fff;border:1px solid #e0e0e0;border-radius:10px;padding:14px 16px;display:flex;align-items:center;gap:12px;transition:box-shadow .15s}
+.cat-card:hover{box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.cat-card-icon{width:36px;height:36px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;color:#fff;font-weight:700}
+.cat-card-body{flex:1;min-width:0}
+.cat-card-label{font-size:11px;color:#888;margin-bottom:2px}
+.cat-card-name{font-size:13px;font-weight:500;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.cat-card-name a{color:#185FA5;text-decoration:none}
+.cat-card-name a:hover{text-decoration:underline}
+.cat-card-desc{font-size:11px;color:#999;margin-top:2px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.cat-card-stars{font-size:18px;font-weight:700;color:#333;flex-shrink:0;white-space:nowrap}
 @media(max-width:700px){
   .repo-name{width:140px;font-size:12px}
   .stars-cell{width:60px;font-size:12px}
@@ -90,6 +101,11 @@ h1{font-size:22px;font-weight:600;margin-bottom:4px}
   <div id="all-section">
     <div class="section-header">Full ranking (41 repos)</div>
     <div class="bar-list" id="all-list"></div>
+  </div>
+
+  <div id="category-top1-section">
+    <div class="section-header">Top 1 by Category</div>
+    <div class="cat-grid" id="cat-grid"></div>
   </div>
 
   <div class="footer">
@@ -289,8 +305,37 @@ document.getElementById('search').addEventListener('input', function(e) {
   render();
 });
 
+function buildCategoryTop1() {
+  var topByCat = {};
+  REPOS.forEach(function(r) {
+    if (!topByCat[r.cat] || r.stars > topByCat[r.cat].stars) {
+      topByCat[r.cat] = r;
+    }
+  });
+  var catOrder = ['official','curated','research','automated','visualization','workbench','mcp','domain-neuro','education'];
+  var grid = document.getElementById('cat-grid');
+  catOrder.forEach(function(cat) {
+    var r = topByCat[cat];
+    if (!r) return;
+    var color = CAT_COLORS[cat];
+    var url = 'https://github.com/' + r.name;
+    var card = document.createElement('div');
+    card.className = 'cat-card';
+    card.innerHTML =
+      '<div class="cat-card-icon" style="background:' + color + '">\u2605</div>' +
+      '<div class="cat-card-body">' +
+        '<div class="cat-card-label">' + CAT_LABELS[cat] + '</div>' +
+        '<div class="cat-card-name"><a href="' + url + '" target="_blank">' + shortName(r.name) + '</a></div>' +
+        '<div class="cat-card-desc">' + r.desc + '</div>' +
+      '</div>' +
+      '<div class="cat-card-stars">\u2B50 ' + fmt(r.stars) + '</div>';
+    grid.appendChild(card);
+  });
+}
+
 buildLegend();
 render();
+buildCategoryTop1();
 </script>
 </body>
 </html>
