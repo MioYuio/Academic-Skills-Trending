@@ -1,7 +1,7 @@
 # Academic Skills Trending
 
 > 🤖 **This repository is automatically maintained by [WorkBuddy](https://codebuddy.ai).**  
-> Data, rankings, and pages are generated and refreshed programmatically — not curated by hand. Say **"refresh"** to WorkBuddy to trigger an update.
+> Data, rankings, and pages are generated and refreshed programmatically — not curated by hand.
 >
 > A trending board of **AI Agent Skills** (SKILL.md format) for scientific research — sorted by GitHub stars, tracked weekly. Only skills that give AI agents (Claude Code, Codex, Cursor, Gemini CLI, etc.) new capabilities.
 
