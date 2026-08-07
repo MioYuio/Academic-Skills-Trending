@@ -17,98 +17,92 @@
 
 ---
 
-## Full Ranking
+## Interactive Trending Board
 
-All 67 tracked repositories, sorted by total GitHub stars (descending).
+**[Open the interactive bar chart >](https://miouyuio.github.io/Academic-Skills-Trending/)**
 
-| # | Repository | Stars | Weekly Δ | Category | Description |
-|---|---|---|---|---|---|
-| 1 | [anthropics/skills](https://github.com/anthropics/skills) | 166,839 | — *first scan* | LLM & AI | Official Anthropic Agent Skills — docx/pdf/pptx/xlsx, skill-creator, mcp-builder, webapp-testing. Defines the SKILL.md standard. |
-| 2 | [sickn33/agentic-awesome-skills](https://github.com/sickn33/agentic-awesome-skills) | 44,589 | — *first scan* | LLM & AI | Agentic Awesome Skills (AAS): local agent-first control plane for 2,005+ agentic skills. CLI, local MCP, catalog, plugins, Workbench. Cross-model discovery and stack validation. |
-| 3 | [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | 41,253 | — *first scan* | LLM & AI | Academic Research Skills: 4 core skills (Deep Research / Academic Paper / Paper Reviewer / Full Pipeline), 42 agents, 10 quality gates. Full research lifecycle from literature review to publication. |
-| 4 | [Yuan1z0825/nature-skills](https://github.com/Yuan1z0825/nature-skills) | 33,909 | — *first scan* | LLM & AI | Nature Skills: 11 sub-skills for Nature-style academic writing, scientific figure creation, literature search, paper-to-PPT, reviewer response, patent drafting. Based on published Nature content and official journal guidelines. |
-| 5 | [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) | 32,889 | — *first scan* | LLM & AI | #1 Agent Skills library for science: 158 skills + 100+ databases covering biology, chemistry, medicine, drug discovery, ML, visualization, lab automation. Works with Cursor, Claude Code, Codex, Gemini CLI. |
-| 6 | [Genesis-Embodied-AI/genesis-world](https://github.com/Genesis-Embodied-AI/genesis-world) | 29,710 | — *first scan* | Embodied AI | Genesis: generative simulation platform for general-purpose robotics & embodied AI learning. |
-| 7 | [huggingface/lerobot](https://github.com/huggingface/lerobot) | 26,490 | — *first scan* | Embodied AI | LeRobot: end-to-end robot learning framework. Making AI for Robotics more accessible. |
-| 8 | [google-deepmind/mujoco](https://github.com/google-deepmind/mujoco) | 14,475 | — *first scan* | Embodied AI | MuJoCo: Multi-Joint Dynamics with Contact. General-purpose physics simulator by DeepMind. |
-| 9 | [wanshuiyin/Auto-claude-code-research-in-sleep](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep) | 14,362 | — *first scan* | LLM & AI | ARIS (Auto-Research-In-Sleep): lightweight Markdown-only skills for autonomous ML research — cross-model review loops, idea discovery, experiment automation. No framework lock-in. |
-| 10 | [SakanaAI/AI-Scientist](https://github.com/SakanaAI/AI-Scientist) | 14,357 | — *first scan* | LLM & AI | The AI Scientist: first fully automated open-ended scientific discovery system. Idea -> code -> experiment -> paper. |
-| 11 | [carla-simulator/carla](https://github.com/carla-simulator/carla) | 14,268 | — *first scan* | Embodied AI | CARLA: open-source simulator for autonomous driving research. |
-| 12 | [microsoft/RD-Agent](https://github.com/microsoft/RD-Agent) | 14,159 | — *first scan* | LLM & AI | Microsoft RD-Agent: automated R&D pipeline — quant factor/model evolution, Kaggle automation, paper-to-code. MLE-bench top agent. |
-| 13 | [Orchestra-Research/AI-Research-SKILLs](https://github.com/Orchestra-Research/AI-Research-SKILLs) | 11,486 | — *first scan* | LLM & AI | AI Research Skills Library: comprehensive open-source skill library for AI research and engineering. Works with Claude Code, Codex, Gemini. Maintained by Orchestra Research. |
-| 14 | [isaac-sim/IsaacLab](https://github.com/isaac-sim/IsaacLab) | 7,855 | — *first scan* | Embodied AI | NVIDIA Isaac Lab: unified framework for robot learning built on Isaac Sim. GPU-accelerated. |
-| 15 | [Master-cai/Research-Paper-Writing-Skills](https://github.com/Master-cai/Research-Paper-Writing-Skills) | 5,868 | — *first scan* | LLM & AI | Research Paper Writing Skills: ML/CV/NLP paper writing skill pack adapted from Prof. Peng Sida's notes. Covers experiments, statistics, writing, citations, LaTeX. Codex/Claude Code/Gemini. |
-| 16 | [DeepLabCut/DeepLabCut](https://github.com/DeepLabCut/DeepLabCut) | 5,731 | — *first scan* | Neuroscience | DeepLabCut: markerless pose estimation of user-defined features with deep learning for all animals incl. humans. |
-| 17 | [HKUSTDial/Supervisor-Skills](https://github.com/HKUSTDial/Supervisor-Skills) | 5,181 | — *first scan* | LLM & AI | Supervisor Skills: AI research co-advisor distilled from 10 years of PhD supervision experience. Idea evaluation, paper writing, deep research, pre-submission review. HKUST(GZ). |
-| 18 | [Galaxy-Dawn/claude-scholar](https://github.com/Galaxy-Dawn/claude-scholar) | 5,024 | — *first scan* | LLM & AI | Claude Scholar: semi-automated research assistant for academic research and software development. Supports Claude Code, Codex CLI, Kimi Code CLI, OpenCode. |
-| 19 | [WUBING2023/PaperSpine](https://github.com/WUBING2023/PaperSpine) | 4,685 | — *first scan* | LLM & AI | PaperSpine: motivation-driven paper writing skill suite. Evidence-aware blueprints, revision matrices, LaTeX-safe audits. Learn from strong papers, build central argument, rewrite manuscripts. |
-| 20 | [google-deepmind/dm_control](https://github.com/google-deepmind/dm_control) | 4,659 | — *first scan* | Embodied AI | DeepMind Control Suite: physics-based simulation and RL environments using MuJoCo. |
-| 21 | [facebookresearch/habitat-sim](https://github.com/facebookresearch/habitat-sim) | 3,779 | — *first scan* | Embodied AI | Habitat: flexible, high-performance 3D simulator for Embodied AI research. |
-| 22 | [mne-tools/mne-python](https://github.com/mne-tools/mne-python) | 3,479 | — *first scan* | Neuroscience | MNE-Python: processing time-resolved neural signals (EEG, MEG). |
-| 23 | [mani-skill/ManiSkill](https://github.com/ManiSkill) | 3,208 | — *first scan* | Embodied AI | ManiSkill: GPU-parallelized robotics simulator and manipulation benchmark (SAPIEN). |
-| 24 | [ARISE-Initiative/robosuite](https://github.com/ARISE-Initiative/robosuite) | 2,553 | — *first scan* | Embodied AI | RoboSuite: modular simulation framework and benchmark for robot learning (MuJoCo). |
-| 25 | [openags/paper-search-mcp](https://github.com/openags/paper-search-mcp) | 2,367 | — *first scan* | Cross-Domain | MCP, CLI, Skills for searching and downloading academic papers from arXiv, PubMed, bioRxiv, etc. |
-| 26 | [Lifelong-Robot-Learning/LIBERO](https://github.com/Lifelong-Robot-Learning/LIBERO) | 2,156 | — *first scan* | Embodied AI | LIBERO: benchmarking knowledge transfer in lifelong robot learning. |
-| 27 | [fangwei123456/spikingjelly](https://github.com/fangwei123456/spikingjelly) | 2,091 | — *first scan* | Brain-Inspired | SpikingJelly: open-source deep learning framework for SNNs based on PyTorch (Chinese & English docs). |
-| 28 | [psychopy/psychopy](https://github.com/psychopy/psychopy) | 2,058 | — *first scan* | Neuroscience | PsychoPy: running psychology and neuroscience experiments. |
-| 29 | [jeshraghian/snntorch](https://github.com/jeshraghian/snntorch) | 2,021 | — *first scan* | Brain-Inspired | snnTorch: deep and online learning with spiking neural networks in Python (PyTorch). |
-| 30 | [Farama-Foundation/Metaworld](https://github.com/Farama-Foundation/Metaworld) | 1,866 | — *first scan* | Embodied AI | Meta-World: collections of robotics environments for multi-task and meta RL benchmarking. |
-| 31 | [ai4s-research/awesome-ai-for-science](https://github.com/ai4s-research/awesome-ai-for-science) | 1,840 | — *first scan* | Cross-Domain | Curated list of AI tools, libraries, papers, datasets, and frameworks for scientific discovery. |
-| 32 | [allenai/ai2thor](https://github.com/allenai/ai2thor) | 1,777 | — *first scan* | Embodied AI | AI2-THOR: open-source platform for Visual AI — interaction, navigation, manipulation. |
-| 33 | [octo-models/octo](https://github.com/octo-models/octo) | 1,728 | — *first scan* | Embodied AI | Octo: transformer-based robot policy trained on 800k robot trajectories. |
-| 34 | [analyticalmonk/awesome-neuroscience](https://github.com/analyticalmonk/awesome-neuroscience) | 1,693 | — *first scan* | Neuroscience | Curated list of neuroscience libraries, software, and resources. Python, MATLAB, C++. |
-| 35 | [BindsNET/bindsnet](https://github.com/BindsNET/bindsnet) | 1,690 | — *first scan* | Brain-Inspired | BindsNET: simulation of spiking neural networks (SNNs) using PyTorch. ML & RL oriented. |
-| 36 | [gazebosim/gz-sim](https://github.com/gazebosim/gz-sim) | 1,443 | — *first scan* | Embodied AI | Gazebo: open-source robotics simulator. Latest version of Gazebo. |
-| 37 | [nilearn/nilearn](https://github.com/nilearn/nilearn) | 1,423 | — *first scan* | Neuroscience | Nilearn: machine learning for NeuroImaging in Python. |
-| 38 | [ai4s-research/open-science](https://github.com/ai4s-research/open-science) | 1,240 | — *first scan* | Cross-Domain | Open Science Desktop: local-first AI research workbench. Open-source Claude Science alternative (Tauri + MCP). |
-| 39 | [brian-team/brian2](https://github.com/brian-team/brian2) | 1,207 | — *first scan* | Brain-Inspired | Brian2: free, open-source simulator for spiking neural networks. Designed for flexibility and ease of use. |
-| 40 | [handsome-rich/Awesome-Auto-Research-Tools](https://github.com/handsome-rich/Awesome-Auto-Research-Tools) | 1,132 | — *first scan* | Cross-Domain | Curated list of automated research tools — literature search, experiment, code generation. |
-| 41 | [OpenLAIR/dr-claw](https://github.com/OpenLAIR/dr-claw) | 1,041 | — *first scan* | LLM & AI | Dr-Claw: Super AI Lab with massive AI Doctors as Assistants. Best IDE for Research. |
-| 42 | [mees/calvin](https://github.com/mees/calvin) | 967 | — *first scan* | Embodied AI | CALVIN: benchmark for language-conditioned policy learning for long-horizon manipulation. |
-| 43 | [nengo/nengo](https://github.com/nengo/nengo) | 939 | — *first scan* | Brain-Inspired | Nengo: Python library for creating and simulating large-scale brain models. |
-| 44 | [dipy/dipy](https://github.com/dipy/dipy) | 835 | — *first scan* | Neuroscience | DIPY: 3D/4D+ medical imaging library — diffusion, perfusion, structural imaging. |
-| 45 | [norse/norse](https://github.com/norse/norse) | 813 | — *first scan* | Brain-Inspired | Norse: deep learning with spiking neural networks in PyTorch. Bio-inspired, sparse, event-driven. |
-| 46 | [haosulab/SAPIEN](https://github.com/haosulab/SAPIEN) | 805 | — *first scan* | Embodied AI | SAPIEN: embodied AI platform with realistic physics simulation for articulated objects. |
-| 47 | [nipreps/fmriprep](https://github.com/nipreps/fmriprep) | 744 | — *first scan* | Neuroscience | fMRIPrep: robust preprocessing pipeline for fMRI data. Analysis-ready outputs. |
-| 48 | [lava-nc/lava](https://github.com/lava-nc/lava) | 740 | — *first scan* | Brain-Inspired | Intel Lava: software framework for neuromorphic computing (Loihi 2). |
-| 49 | [flatironinstitute/CaImAn](https://github.com/flatironinstitute/CaImAn) | 726 | — *first scan* | Neuroscience | CaImAn: computational toolbox for large-scale calcium imaging analysis. |
-| 50 | [brainpy/BrainPy](https://github.com/brainpy/BrainPy) | 696 | — *first scan* | Brain-Inspired | BrainPy: brain dynamics programming in Python (JAX/Numba JIT). Integrative framework for computational neuroscience. |
-| 51 | [nest/nest-simulator](https://github.com/nest/nest-simulator) | 657 | — *first scan* | Brain-Inspired | NEST: simulator for large-scale spiking neural network models. Focused on dynamics and structure. |
-| 52 | [BrainCog-X/Brain-Cog](https://github.com/BrainCog-X/Brain-Cog) | 641 | — *first scan* | Brain-Inspired | BrainCog: brain-inspired cognitive intelligence engine for BIAI and brain simulation. |
-| 53 | [genomoncology/biomcp](https://github.com/genomoncology/biomcp) | 574 | — *first scan* | Cross-Domain | BioMCP: biomedical MCP server — literature search (PubMed/Europe PMC), entity pivoting, Claude Code integration. |
-| 54 | [neuronsimulator/nrn](https://github.com/neuronsimulator/nrn) | 533 | — *first scan* | Neuroscience | NEURON: simulation environment for modeling neurons and networks. |
-| 55 | [InternScience/Awesome-Scientific-Skills](https://github.com/InternScience/Awesome-Scientific-Skills) | 503 | — *first scan* | Cross-Domain | Curated Agent Skills for scientific research from Shanghai AI Lab. Link collection -> unified directory -> composition recipes. |
-| 56 | [MouseLand/suite2p](https://github.com/MouseLand/suite2p) | 466 | — *first scan* | Neuroscience | Suite2p: cell detection and signal extraction from two-photon calcium imaging. |
-| 57 | [AllenInstitute/AllenSDK](https://github.com/AllenInstitute/AllenSDK) | 392 | — *first scan* | Neuroscience | AllenSDK: toolkit for accessing Allen Brain Atlas data. |
-| 58 | [NeurodataWithoutBorders/pynwb](https://github.com/NeurodataWithoutBorders/pynwb) | 222 | — *first scan* | Neuroscience | PyNWB: Python API for reading/writing NWB neurophysiology data files. |
-| 59 | [Imbad0202/experiment-agent](https://github.com/Imbad0202/experiment-agent) | 169 | — *first scan* | LLM & AI | Experiment Agent: Claude Code skill for experiment execution, monitoring, statistical interpretation. |
-| 60 | [jonzamora/awesome-robot-learning-envs](https://github.com/jonzamora/awesome-robot-learning-envs) | 126 | — *first scan* | Embodied AI | List of robot learning environments for Deep RL, Imitation Learning, and Embodied AI. |
-| 61 | [synsense/sinabs](https://github.com/synsense/sinabs) | 118 | — *first scan* | Brain-Inspired | Sinabs: deep learning library for spiking CNNs (PyTorch). Focus on fast training and neuromorphic hardware. |
-| 62 | [synsense/rockpool](https://github.com/synsense/rockpool) | 88 | — *first scan* | Brain-Inspired | Rockpool: ML library for SNNs. PyTorch/JAX, GPU/TPU, deployable to neuromorphic hardware. |
-| 63 | [realamirhe/awesome-computational-neuro-science](https://github.com/realamirhe/awesome-computational-neuro-science) | 76 | — *first scan* | Neuroscience | Curated list of CNS frameworks, libraries, software + SNN tutorial series. |
-| 64 | [NeuroAIHub/awesome_cognitive_and_neuroscience_skills](https://github.com/NeuroAIHub/awesome_cognitive_and_neuroscience_skills) | 34 | — *first scan* | Neuroscience | 45 AI-generated skills from academic papers — fMRI, EEG, calcium imaging, DDM, cognitive paradigms. 13 categories. |
-| 65 | [YujxZJCN/teaching-skills](https://github.com/YujxZJCN/teaching-skills) | 17 | — *first scan* | LLM & AI | Teaching Skills for Claude Code — teaching lifecycle suite for university professors. |
-| 66 | [aichr/awesome-physical-ai](https://github.com/aichr/awesome-physical-ai) | 3 | — *first scan* | Embodied AI | Curated resources for Physical AI — VLA models, 3D vision, datasets, simulators, hardware. |
-| 67 | [lhbzx1984/Light-skills](https://github.com/lhbzx1984/Light-skills) | 1 | — *first scan* | LLM & AI | Light: 28 Chinese research skills (literature -> data -> idea -> experiment -> writing -> submission). 9 knowledge bases. |
+The interactive page features:
+- Horizontal bar chart of all 67 repos, sorted by stars
+- Click any repo name or star count to visit the GitHub page
+- Hover over any bar for full description, category, forks
+- Filter by category or search by keyword
 
----
+<details>
+<summary><b>Quick ranking (click to expand)</b></summary>
 
-## Top 10 Research Skill Repositories
+| # | Repository | Stars | Cat | Description |
+|---|---|---|---|---|
+| 1 | [anthropics/skills](https://github.com/anthropics/skills) | 166.8k | LLM | Official Anthropic Agent Skills. Defines the SKILL.md standard. |
+| 2 | [sickn33/agentic-awesome-skills](https://github.com/sickn33/agentic-awesome-skills) | 44.6k | LLM | AAS: 2,005+ agentic skills. CLI, MCP, catalog, Workbench. |
+| 3 | [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | 41.3k | LLM | 4 core skills, 42 agents, 10 quality gates. Full research lifecycle. |
+| 4 | [Yuan1z0825/nature-skills](https://github.com/Yuan1z0825/nature-skills) | 33.9k | LLM | 11 Nature-style sub-skills: writing, figures, search, PPT, review. |
+| 5 | [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) | 32.9k | LLM | 158 science skills + 100+ databases. Bio, chem, medicine, ML. |
+| 6 | [Genesis-Embodied-AI/genesis-world](https://github.com/Genesis-Embodied-AI/genesis-world) | 29.7k | Emb | Genesis: generative simulation platform for robotics. |
+| 7 | [huggingface/lerobot](https://github.com/huggingface/lerobot) | 26.5k | Emb | LeRobot: end-to-end robot learning framework. |
+| 8 | [google-deepmind/mujoco](https://github.com/google-deepmind/mujoco) | 14.5k | Emb | MuJoCo: physics simulator by DeepMind. |
+| 9 | [wanshuiyin/Auto-claude-code-research-in-sleep](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep) | 14.4k | LLM | ARIS: autonomous ML research — cross-model review, idea discovery. |
+| 10 | [SakanaAI/AI-Scientist](https://github.com/SakanaAI/AI-Scientist) | 14.4k | LLM | First fully automated scientific discovery system. |
+| 11 | [carla-simulator/carla](https://github.com/carla-simulator/carla) | 14.3k | Emb | CARLA: open-source autonomous driving simulator. |
+| 12 | [microsoft/RD-Agent](https://github.com/microsoft/RD-Agent) | 14.2k | LLM | Automated R&D pipeline — Kaggle, paper-to-code. |
+| 13 | [Orchestra-Research/AI-Research-SKILLs](https://github.com/Orchestra-Research/AI-Research-SKILLs) | 11.5k | LLM | AI Research Skills Library by Orchestra Research. |
+| 14 | [isaac-sim/IsaacLab](https://github.com/isaac-sim/IsaacLab) | 7.9k | Emb | NVIDIA Isaac Lab: GPU-accelerated robot learning. |
+| 15 | [Master-cai/Research-Paper-Writing-Skills](https://github.com/Master-cai/Research-Paper-Writing-Skills) | 5.9k | LLM | ML/CV/NLP paper writing from Prof. Peng Sida's notes. |
+| 16 | [DeepLabCut/DeepLabCut](https://github.com/DeepLabCut/DeepLabCut) | 5.7k | Neu | Markerless pose estimation for animal behavior. |
+| 17 | [HKUSTDial/Supervisor-Skills](https://github.com/HKUSTDial/Supervisor-Skills) | 5.2k | LLM | AI research co-advisor from 10 yrs PhD supervision. |
+| 18 | [Galaxy-Dawn/claude-scholar](https://github.com/Galaxy-Dawn/claude-scholar) | 5.0k | LLM | Claude Scholar: semi-automated research assistant. |
+| 19 | [WUBING2023/PaperSpine](https://github.com/WUBING2023/PaperSpine) | 4.7k | LLM | Motivation-driven paper writing. Blueprints, revision matrices. |
+| 20 | [google-deepmind/dm_control](https://github.com/google-deepmind/dm_control) | 4.7k | Emb | DeepMind Control Suite: RL environments (MuJoCo). |
+| 21 | [facebookresearch/habitat-sim](https://github.com/facebookresearch/habitat-sim) | 3.8k | Emb | Habitat: 3D simulator for Embodied AI. |
+| 22 | [mne-tools/mne-python](https://github.com/mne-tools/mne-python) | 3.5k | Neu | EEG/MEG processing in Python. |
+| 23 | [mani-skill/ManiSkill](https://github.com/ManiSkill) | 3.2k | Emb | GPU-parallelized manipulation benchmark (SAPIEN). |
+| 24 | [ARISE-Initiative/robosuite](https://github.com/ARISE-Initiative/robosuite) | 2.6k | Emb | Modular robot learning benchmark (MuJoCo). |
+| 25 | [openags/paper-search-mcp](https://github.com/openags/paper-search-mcp) | 2.4k | Cro | Paper search MCP: arXiv, PubMed, bioRxiv. |
+| 26 | [Lifelong-Robot-Learning/LIBERO](https://github.com/Lifelong-Robot-Learning/LIBERO) | 2.2k | Emb | Lifelong robot learning knowledge transfer benchmark. |
+| 27 | [fangwei123456/spikingjelly](https://github.com/fangwei123456/spikingjelly) | 2.1k | BII | SpikingJelly: SNN framework (PyTorch). |
+| 28 | [psychopy/psychopy](https://github.com/psychopy/psychopy) | 2.1k | Neu | Psychology and neuroscience experiments. |
+| 29 | [jeshraghian/snntorch](https://github.com/jeshraghian/snntorch) | 2.0k | BII | snnTorch: SNN training (PyTorch). |
+| 30 | [Farama-Foundation/Metaworld](https://github.com/Farama-Foundation/Metaworld) | 1.9k | Emb | Multi-task and meta RL benchmark. |
+| 31 | [ai4s-research/awesome-ai-for-science](https://github.com/ai4s-research/awesome-ai-for-science) | 1.8k | Cro | AI tools, libraries, papers, datasets for science. |
+| 32 | [allenai/ai2thor](https://github.com/allenai/ai2thor) | 1.8k | Emb | AI2-THOR: Visual AI platform. |
+| 33 | [octo-models/octo](https://github.com/octo-models/octo) | 1.7k | Emb | Octo: transformer robot policy (800k trajectories). |
+| 34 | [analyticalmonk/awesome-neuroscience](https://github.com/analyticalmonk/awesome-neuroscience) | 1.7k | Neu | Curated neuroscience libraries and resources. |
+| 35 | [BindsNET/bindsnet](https://github.com/BindsNET/bindsnet) | 1.7k | BII | BindsNET: SNN simulation (PyTorch). |
+| 36 | [gazebosim/gz-sim](https://github.com/gazebosim/gz-sim) | 1.4k | Emb | Gazebo: open-source robotics simulator. |
+| 37 | [nilearn/nilearn](https://github.com/nilearn/nilearn) | 1.4k | Neu | Machine learning for NeuroImaging. |
+| 38 | [ai4s-research/open-science](https://github.com/ai4s-research/open-science) | 1.2k | Cro | Open Science Desktop: local AI research workbench. |
+| 39 | [brian-team/brian2](https://github.com/brian-team/brian2) | 1.2k | BII | Brian2: SNN simulator for neuroscience. |
+| 40 | [handsome-rich/Awesome-Auto-Research-Tools](https://github.com/handsome-rich/Awesome-Auto-Research-Tools) | 1.1k | Cro | Automated research tools collection. |
+| 41 | [OpenLAIR/dr-claw](https://github.com/OpenLAIR/dr-claw) | 1.0k | LLM | Dr-Claw: AI Lab with AI Doctors as Assistants. |
+| 42 | [mees/calvin](https://github.com/mees/calvin) | 967 | Emb | CALVIN: long-horizon manipulation benchmark. |
+| 43 | [nengo/nengo](https://github.com/nengo/nengo) | 939 | BII | Nengo: large-scale brain model simulation. |
+| 44 | [dipy/dipy](https://github.com/dipy/dipy) | 835 | Neu | DIPY: 3D/4D+ medical imaging. |
+| 45 | [norse/norse](https://github.com/norse/norse) | 813 | BII | Norse: bio-inspired SNN (PyTorch). |
+| 46 | [haosulab/SAPIEN](https://github.com/haosulab/SAPIEN) | 805 | Emb | SAPIEN: embodied AI with realistic physics. |
+| 47 | [nipreps/fmriprep](https://github.com/nipreps/fmriprep) | 744 | Neu | fMRIPrep: fMRI preprocessing pipeline. |
+| 48 | [lava-nc/lava](https://github.com/lava-nc/lava) | 740 | BII | Intel Lava: neuromorphic computing (Loihi 2). |
+| 49 | [flatironinstitute/CaImAn](https://github.com/flatironinstitute/CaImAn) | 726 | Neu | CaImAn: calcium imaging analysis. |
+| 50 | [brainpy/BrainPy](https://github.com/brainpy/BrainPy) | 696 | BII | BrainPy: brain dynamics programming (JAX). |
+| 51 | [nest/nest-simulator](https://github.com/nest/nest-simulator) | 657 | BII | NEST: large-scale spiking network simulator. |
+| 52 | [BrainCog-X/Brain-Cog](https://github.com/BrainCog-X/Brain-Cog) | 641 | BII | BrainCog: brain-inspired cognitive engine. |
+| 53 | [genomoncology/biomcp](https://github.com/genomoncology/biomcp) | 574 | Cro | BioMCP: biomedical MCP server. |
+| 54 | [neuronsimulator/nrn](https://github.com/neuronsimulator/nrn) | 533 | Neu | NEURON: neuron and network modeling. |
+| 55 | [InternScience/Awesome-Scientific-Skills](https://github.com/InternScience/Awesome-Scientific-Skills) | 503 | Cro | Scientific Agent Skills (Shanghai AI Lab). |
+| 56 | [MouseLand/suite2p](https://github.com/MouseLand/suite2p) | 466 | Neu | Suite2p: two-photon calcium imaging. |
+| 57 | [AllenInstitute/AllenSDK](https://github.com/AllenInstitute/AllenSDK) | 392 | Neu | Allen Brain Atlas data access. |
+| 58 | [NeurodataWithoutBorders/pynwb](https://github.com/NeurodataWithoutBorders/pynwb) | 222 | Neu | PyNWB: NWB neurophysiology data API. |
+| 59 | [Imbad0202/experiment-agent](https://github.com/Imbad0202/experiment-agent) | 169 | LLM | Experiment Agent: execution, monitoring, stats. |
+| 60 | [jonzamora/awesome-robot-learning-envs](https://github.com/jonzamora/awesome-robot-learning-envs) | 126 | Emb | Robot learning environments list. |
+| 61 | [synsense/sinabs](https://github.com/synsense/sinabs) | 118 | BII | Sinabs: spiking CNNs (PyTorch). |
+| 62 | [synsense/rockpool](https://github.com/synsense/rockpool) | 88 | BII | Rockpool: SNN ML library (PyTorch/JAX). |
+| 63 | [realamirhe/awesome-computational-neuro-science](https://github.com/realamirhe/awesome-computational-neuro-science) | 76 | Neu | CNS frameworks + SNN tutorials. |
+| 64 | [NeuroAIHub/awesome_cognitive_and_neuroscience_skills](https://github.com/NeuroAIHub/awesome_cognitive_and_neuroscience_skills) | 34 | Neu | 45 AI-generated neuroscience skills. |
+| 65 | [YujxZJCN/teaching-skills](https://github.com/YujxZJCN/teaching-skills) | 17 | LLM | Teaching lifecycle suite for professors. |
+| 66 | [aichr/awesome-physical-ai](https://github.com/aichr/awesome-physical-ai) | 3 | Emb | Physical AI resources — VLA, 3D vision, hardware. |
+| 67 | [lhbzx1984/Light-skills](https://github.com/lhbzx1984/Light-skills) | 1 | LLM | Light: 28 Chinese research skills. |
 
-The ten most-starred research skill repositories as of 2026-08-07:
+*Cat: LLM = LLM & AI, Neu = Neuroscience, BII = Brain-Inspired, Emb = Embodied AI, Cro = Cross-Domain*
 
-| Rank | Repository | Stars | Description |
-|---|---|---|---|
-| 1 | [anthropics/skills](https://github.com/anthropics/skills) | 166,839 | Official Anthropic Agent Skills — defines the SKILL.md standard |
-| 2 | [sickn33/agentic-awesome-skills](https://github.com/sickn33/agentic-awesome-skills) | 44,589 | AAS: 2,005+ agentic skills with CLI, MCP, catalog, and Workbench |
-| 3 | [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | 41,253 | Academic Research Skills: 4 core skills, 42 agents, 10 quality gates |
-| 4 | [Yuan1z0825/nature-skills](https://github.com/Yuan1z0825/nature-skills) | 33,909 | Nature Skills: 11 sub-skills for Nature-style academic writing |
-| 5 | [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) | 32,889 | 158 science skills + 100+ databases for biology, chemistry, medicine |
-| 6 | [wanshuiyin/Auto-claude-code-research-in-sleep](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep) | 14,362 | ARIS: autonomous ML research with cross-model review loops |
-| 7 | [Orchestra-Research/AI-Research-SKILLs](https://github.com/Orchestra-Research/AI-Research-SKILLs) | 11,486 | AI Research Skills Library by Orchestra Research |
-| 8 | [Master-cai/Research-Paper-Writing-Skills](https://github.com/Master-cai/Research-Paper-Writing-Skills) | 5,868 | ML/CV/NLP paper writing skills from Prof. Peng Sida's notes |
-| 9 | [HKUSTDial/Supervisor-Skills](https://github.com/HKUSTDial/Supervisor-Skills) | 5,181 | AI research co-advisor from 10 years of PhD supervision |
-| 10 | [Galaxy-Dawn/claude-scholar](https://github.com/Galaxy-Dawn/claude-scholar) | 5,024 | Claude Scholar: semi-automated research assistant |
+</details>
 
 ---
 

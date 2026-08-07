@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Academic Skills Trending</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#f8f9fa;color:#1a1a1a;line-height:1.6}
+.container{max-width:1100px;margin:0 auto;padding:24px 20px 60px}
+h1{font-size:22px;font-weight:600;margin-bottom:4px}
+.subtitle{font-size:13px;color:#666;margin-bottom:20px}
+.meta{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:16px;align-items:center}
+.meta-item{font-size:12px;color:#888;background:#fff;border:1px solid #e0e0e0;border-radius:6px;padding:4px 10px}
+.controls{display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap;align-items:center}
+.search-box{flex:1;min-width:200px;padding:8px 12px;border:1px solid #d0d0d0;border-radius:8px;font-size:13px;outline:none;background:#fff}
+.search-box:focus{border-color:#378ADD}
+.filter-btn{padding:5px 12px;border:1px solid #d0d0d0;border-radius:20px;font-size:12px;cursor:pointer;background:#fff;transition:all .15s;white-space:nowrap}
+.filter-btn.active{color:#fff;border-color:transparent}
+.filter-btn:hover{opacity:.85}
+.legend{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:12px;font-size:12px;color:#666}
+.legend-item{display:flex;align-items:center;gap:5px;cursor:pointer;user-select:none}
+.legend-dot{width:10px;height:10px;border-radius:3px;flex-shrink:0}
+.bar-list{background:#fff;border:1px solid #e0e0e0;border-radius:12px;overflow:hidden}
+.bar-row{display:flex;align-items:center;padding:6px 16px;gap:10px;border-bottom:1px solid #f0f0f0;position:relative;transition:background .12s}
+.bar-row:last-child{border-bottom:none}
+.bar-row:hover{background:#f5f8ff}
+.bar-row:hover .tooltip{display:block}
+.rank{width:28px;font-size:12px;color:#999;text-align:right;flex-shrink:0;font-variant-numeric:tabular-nums}
+.repo-name{width:240px;font-size:13px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;flex-shrink:0}
+.repo-name a{color:#185FA5;text-decoration:none}
+.repo-name a:hover{text-decoration:underline}
+.bar-track{flex:1;height:22px;background:#f5f5f5;border-radius:4px;overflow:hidden;position:relative;min-width:60px}
+.bar-fill{height:100%;border-radius:4px;transition:width .3s ease}
+.stars-cell{width:80px;text-align:right;flex-shrink:0;font-size:13px;font-variant-numeric:tabular-nums}
+.stars-cell a{color:#333;text-decoration:none;font-weight:500}
+.stars-cell a:hover{color:#378ADD}
+.tooltip{display:none;position:absolute;z-index:100;top:100%;left:50%;transform:translateX(-50%);margin-top:6px;background:#1a1a1a;color:#fff;padding:10px 14px;border-radius:8px;font-size:12px;line-height:1.5;width:340px;box-shadow:0 4px 16px rgba(0,0,0,.15)}
+.tooltip::before{content:'';position:absolute;top:-5px;left:50%;transform:translateX(-50%) rotate(45deg);width:10px;height:10px;background:#1a1a1a}
+.tooltip-desc{display:block;margin-bottom:6px;color:#ddd}
+.tooltip-meta{display:flex;gap:12px;font-size:11px;color:#aaa}
+.tooltip-meta span{display:flex;align-items:center;gap:3px}
+.no-results{padding:40px;text-align:center;color:#999;font-size:14px}
+.section-header{font-size:14px;font-weight:600;margin:24px 0 8px;padding-bottom:6px;border-bottom:2px solid #e8e8e8}
+.top10 .bar-row{padding:8px 16px}
+.top10 .rank{font-weight:600;font-size:14px}
+.medal{font-size:14px;margin-right:2px}
+.footer{margin-top:24px;font-size:12px;color:#999;text-align:center}
+.footer a{color:#378ADD;text-decoration:none}
+@media(max-width:700px){
+  .repo-name{width:140px;font-size:12px}
+  .stars-cell{width:60px;font-size:12px}
+  .rank{width:22px;font-size:11px}
+  .tooltip{width:260px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Academic Skills Trending</h1>
+  <p class="subtitle">AI agent skills &amp; research tools, sorted by GitHub stars. Hover for details.</p>
+  <div class="meta">
+    <span class="meta-item">67 repos tracked</span>
+    <span class="meta-item">Updated: 2026-08-07</span>
+    <span class="meta-item">First scan — weekly &Delta; available next refresh</span>
+  </div>
+
+  <div class="legend" id="legend"></div>
+
+  <div class="controls">
+    <input type="text" class="search-box" id="search" placeholder="Search repos, descriptions...">
+    <button class="filter-btn active" data-cat="all" style="background:#444">All</button>
+    <button class="filter-btn" data-cat="llm-ai" style="background:#378ADD">LLM &amp; AI</button>
+    <button class="filter-btn" data-cat="neuroscience" style="background:#1D9E75">Neuroscience</button>
+    <button class="filter-btn" data-cat="brain-inspired" style="background:#7F77DD">Brain-Inspired</button>
+    <button class="filter-btn" data-cat="embodied" style="background:#BA7517">Embodied AI</button>
+    <button class="filter-btn" data-cat="cross-domain" style="background:#888780">Cross-Domain</button>
+  </div>
+
+  <div id="top10-section">
+    <div class="section-header">Top 10</div>
+    <div class="bar-list top10" id="top10-list"></div>
+  </div>
+
+  <div id="all-section">
+    <div class="section-header">Full ranking (67 repos)</div>
+    <div class="bar-list" id="all-list"></div>
+  </div>
+
+  <div class="footer">
+    Data from GitHub API. <a href="https://github.com/MioYuio/Academic-Skills-Trending">View on GitHub</a> &middot; Say "refresh" to WorkBuddy to update.
+  </div>
+</div>
+
+<script>
+var CAT_COLORS = {
+  'llm-ai': '#378ADD',
+  'neuroscience': '#1D9E75',
+  'brain-inspired': '#7F77DD',
+  'embodied': '#BA7517',
+  'cross-domain': '#888780'
+};
+var CAT_LABELS = {
+  'llm-ai': 'LLM & AI',
+  'neuroscience': 'Neuroscience',
+  'brain-inspired': 'Brain-Inspired',
+  'embodied': 'Embodied AI',
+  'cross-domain': 'Cross-Domain'
+};
+
+var REPOS = [
+  {name:"anthropics/skills",stars:166839,forks:19876,cat:"llm-ai",desc:"Official Anthropic Agent Skills — docx/pdf/pptx/xlsx, skill-creator, mcp-builder, webapp-testing. Defines the SKILL.md standard."},
+  {name:"sickn33/agentic-awesome-skills",stars:44589,forks:6547,cat:"llm-ai",desc:"AAS: local agent-first control plane for 2,005+ agentic skills. CLI, local MCP, catalog, plugins, Workbench."},
+  {name:"Imbad0202/academic-research-skills",stars:41253,forks:3287,cat:"llm-ai",desc:"Academic Research Skills: 4 core skills, 42 agents, 10 quality gates. Full research lifecycle — literature to publication."},
+  {name:"Yuan1z0825/nature-skills",stars:33909,forks:1933,cat:"llm-ai",desc:"Nature Skills: 11 sub-skills for Nature-style academic writing, figures, literature search, paper-to-PPT, reviewer response, patent drafting."},
+  {name:"K-Dense-AI/scientific-agent-skills",stars:32889,forks:3243,cat:"llm-ai",desc:"158 science skills + 100+ databases: biology, chemistry, medicine, drug discovery, ML, visualization, lab automation."},
+  {name:"Genesis-Embodied-AI/genesis-world",stars:29710,forks:2828,cat:"embodied",desc:"Genesis: generative simulation platform for general-purpose robotics & embodied AI learning."},
+  {name:"huggingface/lerobot",stars:26490,forks:5327,cat:"embodied",desc:"LeRobot: end-to-end robot learning framework. Making AI for Robotics more accessible."},
+  {name:"google-deepmind/mujoco",stars:14475,forks:1673,cat:"embodied",desc:"MuJoCo: Multi-Joint Dynamics with Contact. General-purpose physics simulator by DeepMind."},
+  {name:"wanshuiyin/Auto-claude-code-research-in-sleep",stars:14362,forks:1273,cat:"llm-ai",desc:"ARIS: lightweight Markdown-only skills for autonomous ML research — cross-model review loops, idea discovery, experiment automation."},
+  {name:"SakanaAI/AI-Scientist",stars:14357,forks:2034,cat:"llm-ai",desc:"The AI Scientist: first fully automated open-ended scientific discovery system. Idea to code to experiment to paper."},
+  {name:"carla-simulator/carla",stars:14268,forks:4648,cat:"embodied",desc:"CARLA: open-source simulator for autonomous driving research."},
+  {name:"microsoft/RD-Agent",stars:14159,forks:1812,cat:"llm-ai",desc:"Microsoft RD-Agent: automated R&D pipeline — quant factor/model evolution, Kaggle automation, paper-to-code."},
+  {name:"Orchestra-Research/AI-Research-SKILLs",stars:11486,forks:840,cat:"llm-ai",desc:"AI Research Skills Library: comprehensive skill library for AI research and engineering. Claude Code, Codex, Gemini."},
+  {name:"isaac-sim/IsaacLab",stars:7855,forks:3813,cat:"embodied",desc:"NVIDIA Isaac Lab: unified framework for robot learning built on Isaac Sim. GPU-accelerated."},
+  {name:"Master-cai/Research-Paper-Writing-Skills",stars:5868,forks:289,cat:"llm-ai",desc:"ML/CV/NLP paper writing skills adapted from Prof. Peng Sida's notes. Experiments, statistics, writing, LaTeX."},
+  {name:"DeepLabCut/DeepLabCut",stars:5731,forks:1791,cat:"neuroscience",desc:"DeepLabCut: markerless pose estimation with deep learning for all animals including humans."},
+  {name:"HKUSTDial/Supervisor-Skills",stars:5181,forks:361,cat:"llm-ai",desc:"AI research co-advisor from 10 years of PhD supervision. Idea evaluation, paper writing, deep research, pre-submission review."},
+  {name:"Galaxy-Dawn/claude-scholar",stars:5024,forks:413,cat:"llm-ai",desc:"Claude Scholar: semi-automated research assistant. Ideation, coding, experiments, writing, publication."},
+  {name:"WUBING2023/PaperSpine",stars:4685,forks:189,cat:"llm-ai",desc:"PaperSpine: motivation-driven paper writing. Evidence-aware blueprints, revision matrices, LaTeX-safe audits."},
+  {name:"google-deepmind/dm_control",stars:4659,forks:758,cat:"embodied",desc:"DeepMind Control Suite: physics-based simulation and RL environments using MuJoCo."},
+  {name:"facebookresearch/habitat-sim",stars:3779,forks:546,cat:"embodied",desc:"Habitat: flexible, high-performance 3D simulator for Embodied AI research."},
+  {name:"mne-tools/mne-python",stars:3479,forks:1578,cat:"neuroscience",desc:"MNE-Python: processing time-resolved neural signals (EEG, MEG)."},
+  {name:"mani-skill/ManiSkill",stars:3208,forks:529,cat:"embodied",desc:"ManiSkill: GPU-parallelized robotics simulator and manipulation benchmark (SAPIEN)."},
+  {name:"ARISE-Initiative/robosuite",stars:2553,forks:747,cat:"embodied",desc:"RoboSuite: modular simulation framework and benchmark for robot learning (MuJoCo)."},
+  {name:"openags/paper-search-mcp",stars:2367,forks:230,cat:"cross-domain",desc:"MCP, CLI, Skills for searching and downloading academic papers from arXiv, PubMed, bioRxiv."},
+  {name:"Lifelong-Robot-Learning/LIBERO",stars:2156,forks:452,cat:"embodied",desc:"LIBERO: benchmarking knowledge transfer in lifelong robot learning."},
+  {name:"fangwei123456/spikingjelly",stars:2091,forks:320,cat:"brain-inspired",desc:"SpikingJelly: open-source deep learning framework for SNNs based on PyTorch."},
+  {name:"psychopy/psychopy",stars:2058,forks:982,cat:"neuroscience",desc:"PsychoPy: running psychology and neuroscience experiments."},
+  {name:"jeshraghian/snntorch",stars:2021,forks:297,cat:"brain-inspired",desc:"snnTorch: deep and online learning with spiking neural networks in Python (PyTorch)."},
+  {name:"Farama-Foundation/Metaworld",stars:1866,forks:348,cat:"embodied",desc:"Meta-World: robotics environments for multi-task and meta RL benchmarking."},
+  {name:"ai4s-research/awesome-ai-for-science",stars:1840,forks:218,cat:"cross-domain",desc:"Curated list of AI tools, libraries, papers, datasets, and frameworks for scientific discovery."},
+  {name:"allenai/ai2thor",stars:1777,forks:297,cat:"embodied",desc:"AI2-THOR: open-source platform for Visual AI — interaction, navigation, manipulation."},
+  {name:"octo-models/octo",stars:1728,forks:277,cat:"embodied",desc:"Octo: transformer-based robot policy trained on 800k robot trajectories."},
+  {name:"analyticalmonk/awesome-neuroscience",stars:1693,forks:180,cat:"neuroscience",desc:"Curated list of neuroscience libraries, software, and resources. Python, MATLAB, C++."},
+  {name:"BindsNET/bindsnet",stars:1690,forks:347,cat:"brain-inspired",desc:"BindsNET: simulation of spiking neural networks (SNNs) using PyTorch. ML & RL oriented."},
+  {name:"gazebosim/gz-sim",stars:1443,forks:444,cat:"embodied",desc:"Gazebo: open-source robotics simulator."},
+  {name:"nilearn/nilearn",stars:1423,forks:673,cat:"neuroscience",desc:"Nilearn: machine learning for NeuroImaging in Python."},
+  {name:"ai4s-research/open-science",stars:1240,forks:138,cat:"cross-domain",desc:"Open Science Desktop: local-first AI research workbench (Tauri + MCP)."},
+  {name:"brian-team/brian2",stars:1207,forks:289,cat:"brain-inspired",desc:"Brian2: free, open-source simulator for spiking neural networks."},
+  {name:"handsome-rich/Awesome-Auto-Research-Tools",stars:1132,forks:87,cat:"cross-domain",desc:"Curated list of automated research tools — literature search, experiment, code generation."},
+  {name:"OpenLAIR/dr-claw",stars:1041,forks:116,cat:"llm-ai",desc:"Dr-Claw: Super AI Lab with massive AI Doctors as Assistants. Best IDE for Research."},
+  {name:"mees/calvin",stars:967,forks:123,cat:"embodied",desc:"CALVIN: benchmark for language-conditioned policy learning for long-horizon manipulation."},
+  {name:"nengo/nengo",stars:939,forks:197,cat:"brain-inspired",desc:"Nengo: Python library for creating and simulating large-scale brain models."},
+  {name:"dipy/dipy",stars:835,forks:502,cat:"neuroscience",desc:"DIPY: 3D/4D+ medical imaging library — diffusion, perfusion, structural imaging."},
+  {name:"norse/norse",stars:813,forks:104,cat:"brain-inspired",desc:"Norse: deep learning with spiking neural networks in PyTorch. Bio-inspired, sparse, event-driven."},
+  {name:"haosulab/SAPIEN",stars:805,forks:77,cat:"embodied",desc:"SAPIEN: embodied AI platform with realistic physics simulation for articulated objects."},
+  {name:"nipreps/fmriprep",stars:744,forks:321,cat:"neuroscience",desc:"fMRIPrep: robust preprocessing pipeline for fMRI data. Analysis-ready outputs."},
+  {name:"lava-nc/lava",stars:740,forks:181,cat:"brain-inspired",desc:"Intel Lava: software framework for neuromorphic computing (Loihi 2)."},
+  {name:"flatironinstitute/CaImAn",stars:726,forks:400,cat:"neuroscience",desc:"CaImAn: computational toolbox for large-scale calcium imaging analysis."},
+  {name:"brainpy/BrainPy",stars:696,forks:109,cat:"brain-inspired",desc:"BrainPy: brain dynamics programming in Python (JAX/Numba JIT)."},
+  {name:"nest/nest-simulator",stars:657,forks:402,cat:"brain-inspired",desc:"NEST: simulator for large-scale spiking neural network models."},
+  {name:"BrainCog-X/Brain-Cog",stars:641,forks:108,cat:"brain-inspired",desc:"BrainCog: brain-inspired cognitive intelligence engine for BIAI and brain simulation."},
+  {name:"genomoncology/biomcp",stars:574,forks:112,cat:"cross-domain",desc:"BioMCP: biomedical MCP server — PubMed, Europe PMC, entity pivoting, Claude Code integration."},
+  {name:"neuronsimulator/nrn",stars:533,forks:148,cat:"neuroscience",desc:"NEURON: simulation environment for modeling neurons and networks."},
+  {name:"InternScience/Awesome-Scientific-Skills",stars:503,forks:36,cat:"cross-domain",desc:"Curated Agent Skills for scientific research from Shanghai AI Lab."},
+  {name:"MouseLand/suite2p",stars:466,forks:280,cat:"neuroscience",desc:"Suite2p: cell detection and signal extraction from two-photon calcium imaging."},
+  {name:"AllenInstitute/AllenSDK",stars:392,forks:163,cat:"neuroscience",desc:"AllenSDK: toolkit for accessing Allen Brain Atlas data."},
+  {name:"NeurodataWithoutBorders/pynwb",stars:222,forks:99,cat:"neuroscience",desc:"PyNWB: Python API for reading/writing NWB neurophysiology data files."},
+  {name:"Imbad0202/experiment-agent",stars:169,forks:11,cat:"llm-ai",desc:"Experiment Agent: Claude Code skill for experiment execution, monitoring, statistical interpretation."},
+  {name:"jonzamora/awesome-robot-learning-envs",stars:126,forks:4,cat:"embodied",desc:"List of robot learning environments for Deep RL, Imitation Learning, and Embodied AI."},
+  {name:"synsense/sinabs",stars:118,forks:15,cat:"brain-inspired",desc:"Sinabs: deep learning library for spiking CNNs (PyTorch). Fast training, neuromorphic hardware."},
+  {name:"synsense/rockpool",stars:88,forks:16,cat:"brain-inspired",desc:"Rockpool: ML library for SNNs. PyTorch/JAX, GPU/TPU, deployable to neuromorphic hardware."},
+  {name:"realamirhe/awesome-computational-neuro-science",stars:76,forks:10,cat:"neuroscience",desc:"Curated list of CNS frameworks, libraries, software + SNN tutorial series."},
+  {name:"NeuroAIHub/awesome_cognitive_and_neuroscience_skills",stars:34,forks:5,cat:"neuroscience",desc:"45 AI-generated skills from academic papers — fMRI, EEG, calcium imaging, DDM, cognitive paradigms."},
+  {name:"YujxZJCN/teaching-skills",stars:17,forks:3,cat:"llm-ai",desc:"Teaching Skills for Claude Code — teaching lifecycle suite for university professors."},
+  {name:"aichr/awesome-physical-ai",stars:3,forks:0,cat:"embodied",desc:"Curated resources for Physical AI — VLA models, 3D vision, datasets, simulators, hardware."},
+  {name:"lhbzx1984/Light-skills",stars:1,forks:0,cat:"llm-ai",desc:"Light: 28 Chinese research skills (literature to submission). 9 knowledge bases."}
+];
+
+var maxStars = 166839;
+var activeFilter = 'all';
+var searchTerm = '';
+
+function fmt(n) {
+  if (n >= 1000) return (n / 1000).toFixed(n >= 10000 ? 0 : 1) + 'k';
+  return n.toString();
+}
+
+function barWidth(stars) {
+  return Math.max(2, (Math.log10(stars + 1) / Math.log10(maxStars + 1)) * 100);
+}
+
+function shortName(full) {
+  var parts = full.split('/');
+  return parts[1] || full;
+}
+
+function buildBarRow(repo, rank) {
+  var color = CAT_COLORS[repo.cat];
+  var w = barWidth(repo.stars);
+  var medals = ['&#129351;', '&#129352;', '&#129353;'];
+  var rankHtml = rank <= 3 ? '<span class="medal">' + medals[rank - 1] + '</span>' : '';
+  var url = 'https://github.com/' + repo.name;
+
+  var row = document.createElement('div');
+  row.className = 'bar-row';
+  row.setAttribute('data-cat', repo.cat);
+  row.setAttribute('data-search', (repo.name + ' ' + repo.desc).toLowerCase());
+
+  row.innerHTML =
+    '<span class="rank">' + rankHtml + (rank > 3 ? rank : '') + '</span>' +
+    '<span class="repo-name"><a href="' + url + '" target="_blank">' + shortName(repo.name) + '</a></span>' +
+    '<div class="bar-track">' +
+      '<div class="bar-fill" style="width:' + w + '%;background:' + color + '"></div>' +
+    '</div>' +
+    '<span class="stars-cell"><a href="' + url + '/stargazers" target="_blank">' + fmt(repo.stars) + '</a></span>' +
+    '<div class="tooltip">' +
+      '<span class="tooltip-desc">' + repo.desc + '</span>' +
+      '<div class="tooltip-meta">' +
+        '<span style="color:' + color + '">&#9632; ' + CAT_LABELS[repo.cat] + '</span>' +
+        '<span>&#9733; ' + repo.stars.toLocaleString() + '</span>' +
+        '<span>&#9748; ' + repo.forks.toLocaleString() + ' forks</span>' +
+        '<span>&#128279; ' + repo.name + '</span>' +
+      '</div>' +
+    '</div>';
+
+  return row;
+}
+
+function render() {
+  var top10List = document.getElementById('top10-list');
+  var allList = document.getElementById('all-list');
+  top10List.innerHTML = '';
+  allList.innerHTML = '';
+
+  var filtered = REPOS.filter(function(r) {
+    var catOk = activeFilter === 'all' || r.cat === activeFilter;
+    var searchOk = !searchTerm || (r.name + ' ' + r.desc).toLowerCase().indexOf(searchTerm) !== -1;
+    return catOk && searchOk;
+  });
+
+  if (filtered.length === 0) {
+    allList.innerHTML = '<div class="no-results">No repositories match your filter.</div>';
+    return;
+  }
+
+  var top10 = filtered.slice(0, 10);
+  var rest = filtered.slice(10);
+
+  top10.forEach(function(r, i) {
+    top10List.appendChild(buildBarRow(r, i + 1));
+  });
+
+  if (rest.length > 0) {
+    rest.forEach(function(r, i) {
+      allList.appendChild(buildBarRow(r, i + 11));
+    });
+  } else {
+    allList.innerHTML = '<div class="no-results" style="padding:20px">All results shown in Top 10 above.</div>';
+  }
+}
+
+function buildLegend() {
+  var legend = document.getElementById('legend');
+  var cats = Object.keys(CAT_COLORS);
+  cats.forEach(function(cat) {
+    var item = document.createElement('div');
+    item.className = 'legend-item';
+    item.innerHTML = '<span class="legend-dot" style="background:' + CAT_COLORS[cat] + '"></span>' + CAT_LABELS[cat];
+    legend.appendChild(item);
+  });
+}
+
+document.querySelectorAll('.filter-btn').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    document.querySelectorAll('.filter-btn').forEach(function(b) {
+      b.style.background = '#fff';
+      b.style.color = '#333';
+      b.classList.remove('active');
+    });
+    var cat = btn.getAttribute('data-cat');
+    if (cat === 'all') {
+      btn.style.background = '#444';
+      btn.style.color = '#fff';
+    } else {
+      btn.style.background = CAT_COLORS[cat];
+      btn.style.color = '#fff';
+    }
+    btn.classList.add('active');
+    activeFilter = cat;
+    render();
+  });
+});
+
+document.getElementById('search').addEventListener('input', function(e) {
+  searchTerm = e.target.value.toLowerCase().trim();
+  render();
+});
+
+buildLegend();
+render();
+</script>
+</body>
+</html>
