@@ -6,8 +6,8 @@
 > A trending board of **AI Agent Skills** (SKILL.md format) for scientific research — sorted by GitHub stars, tracked weekly. Only skills that give AI agents (Claude Code, Codex, Cursor, Gemini CLI, etc.) new capabilities.
 
 [![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)
-[![Last Updated](https://img.shields.io/badge/Updated-2026--08--07-blue.svg)](https://github.com/MioYuio/Academic-Skills-Trending)
-[![Repos Tracked](https://img.shields.io/badge/Repos%20Tracked-41-green.svg)](#full-ranking)
+[![Last Updated](https://img.shields.io/badge/Updated-2026--08--17-blue.svg)](https://github.com/MioYuio/Academic-Skills-Trending)
+[![Repos Tracked](https://img.shields.io/badge/Repos%20Tracked-50-green.svg)](#full-ranking)
 
 ## Scope
 
@@ -22,7 +22,7 @@ This collection is strictly limited to **Agent Skills** — repos following the 
 **[Open the interactive bar chart >](https://mioyuio.github.io/Academic-Skills-Trending/)**
 
 The interactive page features:
-- Horizontal bar chart of all 41 Agent Skills, sorted by stars
+- Horizontal bar chart of all 50 Agent Skills, sorted by stars
 - Click any repo name or star count to visit the GitHub page
 - Hover over any bar for full description, category, forks
 - Filter by category or search by keyword
@@ -30,49 +30,58 @@ The interactive page features:
 <details>
 <summary><b>Quick ranking (click to expand)</b></summary>
 
-| # | Repository | Stars | Cat | Description |
-|---|---|---|---|---|
-| 1 | [mattpocock/skills](https://github.com/mattpocock/skills) | 208.1k | Off | Skills for Real Engineers. Straight from .agents directory. |
-| 2 | [anthropics/skills](https://github.com/anthropics/skills) | 166.8k | Off | Official Anthropic Agent Skills. Defines the SKILL.md standard. |
-| 3 | [sickn33/agentic-awesome-skills](https://github.com/sickn33/agentic-awesome-skills) | 44.6k | Lib | AAS: 2,005+ agentic skills. CLI, MCP, catalog, Workbench. |
-| 4 | [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | 41.3k | Res | 4 core skills, 42 agents, 10 quality gates. Full research lifecycle. |
-| 5 | [Yuan1z0825/nature-skills](https://github.com/Yuan1z0825/nature-skills) | 33.9k | Res | 11 Nature-style sub-skills: writing, figures, search, PPT, review. |
-| 6 | [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) | 32.9k | Lib | 158 science skills + 100+ databases. Bio, chem, medicine, ML. |
-| 7 | [davila7/claude-code-templates](https://github.com/davila7/claude-code-templates) | 30.1k | Off | CLI for configuring and monitoring Claude Code. |
-| 8 | [KKKKhazix/khazix-skills](https://github.com/KKKKhazix/khazix-skills) | 19.3k | Lib | Agent Skills: leader, neat-freak, hv-analysis, khazix-writer. |
-| 9 | [wanshuiyin/Auto-claude-code-research-in-sleep](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep) | 14.4k | Aut | ARIS: autonomous ML research — cross-model review, idea discovery. |
-| 10 | [aiming-lab/AutoResearchClaw](https://github.com/aiming-lab/AutoResearchClaw) | 14.0k | Aut | Fully autonomous & self-evolving research: idea to paper. |
-| 11 | [Orchestra-Research/AI-Research-SKILLs](https://github.com/Orchestra-Research/AI-Research-SKILLs) | 11.5k | Lib | AI Research Skills Library by Orchestra Research. |
-| 12 | [Imbad0202/academic-research-skills-codex](https://github.com/Imbad0202/academic-research-skills-codex) | 8.0k | Res | Codex-native Academic Research Skills suite. |
-| 13 | [Master-cai/Research-Paper-Writing-Skills](https://github.com/Master-cai/Research-Paper-Writing-Skills) | 5.9k | Res | ML/CV/NLP paper writing from Prof. Peng Sida's notes. |
-| 14 | [HKUSTDial/Supervisor-Skills](https://github.com/HKUSTDial/Supervisor-Skills) | 5.2k | Res | AI research co-advisor from 10 yrs PhD supervision. |
-| 15 | [Galaxy-Dawn/claude-scholar](https://github.com/Galaxy-Dawn/claude-scholar) | 5.0k | Res | Claude Scholar: semi-automated research assistant. |
-| 16 | [ahmetbersoz/chatgpt-prompts-for-academic-writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing) | 4.9k | Res | Writing prompts for research, brainstorming, reviews. |
-| 17 | [WUBING2023/PaperSpine](https://github.com/WUBING2023/PaperSpine) | 4.7k | Res | Motivation-driven paper writing. Blueprints, revision matrices. |
-| 18 | [coleam00/excalidraw-diagram-skill](https://github.com/coleam00/excalidraw-diagram-skill) | 4.3k | Vis | Generate beautiful Excalidraw diagrams from any coding agent. |
-| 19 | [OpenNSWM-Lab/FAROS](https://github.com/OpenNSWM-Lab/FAROS) | 3.1k | Res | Blueprint-driven AutoResearch: idea → experiment → paper → review. |
-| 20 | [markdown-viewer/skills](https://github.com/markdown-viewer/skills) | 3.1k | Vis | Skills for diagrams and visualizations in Markdown. |
-| 21 | [synthetic-sciences/openscience](https://github.com/synthetic-sciences/openscience) | 3.1k | Wbk | Open-source AI workbench for scientific research. |
-| 22 | [foryourhealth111-pixel/Vibe-Skills](https://github.com/foryourhealth111-pixel/Vibe-Skills) | 2.6k | Wbk | VibeSkills: auto-routes local Skills and orchestrates harness. |
-| 23 | [openags/paper-search-mcp](https://github.com/openags/paper-search-mcp) | 2.4k | MCP | MCP for paper search: arXiv, PubMed, bioRxiv. |
-| 24 | [lynote-ai/humanize-text](https://github.com/lynote-ai/humanize-text) | 1.6k | Res | Humanize text: readability and natural cadence for AI drafts. |
-| 25 | [ai4s-research/open-science](https://github.com/ai4s-research/open-science) | 1.2k | Wbk | Open Science Desktop: local-first AI research workbench. |
-| 26 | [lishix520/academic-paper-skills](https://github.com/lishix520/academic-paper-skills) | 1.1k | Res | Systematic framework for planning/writing papers. |
-| 27 | [OpenLAIR/dr-claw](https://github.com/OpenLAIR/dr-claw) | 1.0k | Wbk | Dr-Claw: AI Lab with AI Doctors as Assistants. |
-| 28 | [AIScientists-Dev/academic-humanizer](https://github.com/AIScientists-Dev/academic-humanizer) | 823 | Res | Strip AI-writing tells from papers and grant proposals. |
-| 29 | [QJHWC/PaperForge](https://github.com/QJHWC/PaperForge) | 614 | Res | End-to-end paper writing: idea → experiment → LaTeX. |
-| 30 | [genomoncology/biomcp](https://github.com/genomoncology/biomcp) | 574 | MCP | BioMCP: biomedical MCP — PubMed, entity pivoting. |
-| 31 | [hanlulong/econ-writing-skill](https://github.com/hanlulong/econ-writing-skill) | 516 | Res | Economics paper writing skill (50+ guides synthesized). |
-| 32 | [InternScience/Awesome-Scientific-Skills](https://github.com/InternScience/Awesome-Scientific-Skills) | 503 | Lib | Curated Agent Skills for scientific research (Shanghai AI Lab). |
-| 33 | [federicodeponte/opendraft](https://github.com/federicodeponte/opendraft) | 366 | Res | Open-source AI thesis writer with 19 specialized agents. |
-| 34 | [alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill) | 361 | Res | 30 Prompt templates for full paper writing lifecycle. |
-| 35 | [jamditis/claude-skills-journalism](https://github.com/jamditis/claude-skills-journalism) | 356 | Res | Claude skills for journalism, media, and academia. |
-| 36 | [WenyuChiou/ai-research-skills](https://github.com/WenyuChiou/ai-research-skills) | 196 | Lib | Universal SKILL.md catalog for research workflows. |
-| 37 | [Imbad0202/experiment-agent](https://github.com/Imbad0202/experiment-agent) | 169 | Res | Claude Code skill for experiment execution & interpretation. |
-| 38 | [Epsilon617/Codex-Academic-Skills](https://github.com/Epsilon617/Codex-Academic-Skills) | 165 | Res | Curated research skills for OpenAI Codex. |
-| 39 | [NeuroAIHub/awesome_cognitive_and_neuroscience_skills](https://github.com/NeuroAIHub/awesome_cognitive_and_neuroscience_skills) | 34 | Neu | 45 neuroscience skills: fMRI, EEG, calcium imaging, DDM. |
-| 40 | [YujxZJCN/teaching-skills](https://github.com/YujxZJCN/teaching-skills) | 17 | Edu | Teaching lifecycle suite for university professors. |
-| 41 | [lhbzx1984/Light-skills](https://github.com/lhbzx1984/Light-skills) | 1 | Res | Light: 28 Chinese research skills (literature → submission). |
+| # | Repository | Stars | Δ10d | Cat | Description |
+|---|---|---|---|---|---|
+| 1 | [obra/superpowers](https://github.com/obra/superpowers) | 272.7k | new | Lib | Agentic skills framework & software development methodology that works. Plan-build-verify loops. |
+| 2 | [mattpocock/skills](https://github.com/mattpocock/skills) | 219.0k | +10.9k | Off | Skills for Real Engineers. Straight from .agents directory. Production-tested agent skills. |
+| 3 | [anthropics/skills](https://github.com/anthropics/skills) | 169.7k | +2.9k | Off | Official Anthropic Agent Skills — docx/pdf/pptx/xlsx, skill-creator, mcp-builder, webapp-testing. Defines the SKILL.md standard. |
+| 4 | [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | 87.7k | new | Lib | Production-grade engineering skills for AI coding agents. |
+| 5 | [ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills) | 72.6k | new | Lib | Curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows. |
+| 6 | [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) | 58.4k | new | Res | AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, then synthesizes a grounded summary. |
+| 7 | [kepano/obsidian-skills](https://github.com/kepano/obsidian-skills) | 46.4k | new | Off | Agent skills for Obsidian. Obsidian CLI, Markdown, Bases, JSON Canvas open formats. |
+| 8 | [sickn33/agentic-awesome-skills](https://github.com/sickn33/agentic-awesome-skills) | 45.0k | +424 | Lib | AAS: local agent-first control plane for 2,005+ agentic skills. CLI, local MCP, catalog, plugins, Workbench. |
+| 9 | [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | 42.7k | +1.4k | Res | Academic Research Skills: 4 core skills, 42 agents, 10 quality gates. Full research lifecycle — literature to publication. |
+| 10 | [blader/humanizer](https://github.com/blader/humanizer) | 35.9k | new | Res | Agent skill that removes signs of AI-generated writing from text. |
+| 11 | [Yuan1z0825/nature-skills](https://github.com/Yuan1z0825/nature-skills) | 35.5k | +1.6k | Res | Nature Skills: 11 sub-skills for Nature-style academic writing, figures, literature search, paper-to-PPT, reviewer response, patent drafting. |
+| 12 | [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) | 33.6k | +756 | Lib | 158 science skills + 100+ databases: biology, chemistry, medicine, drug discovery, ML, visualization, lab automation. |
+| 13 | [VoltAgent/awesome-agent-skills](https://github.com/VoltAgent/awesome-agent-skills) | 30.4k | new | Lib | 1000+ curated agent skills from official dev teams and community. Claude Code, Codex, Gemini CLI, Cursor. |
+| 14 | [davila7/claude-code-templates](https://github.com/davila7/claude-code-templates) | 30.3k | +117 | Off | CLI for configuring and monitoring Claude Code. Templates, hooks, MCP configs, and skill management. |
+| 15 | [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) | 30.1k | new | Off | Vercel's official collection of agent skills. |
+| 16 | [alirezarezvani/claude-skills](https://github.com/alirezarezvani/claude-skills) | 24.5k | new | Lib | 345 Claude Code skills & plugins: 30+ agents, 70+ commands, 330+ skills for Claude Code, Codex, Gemini CLI, Cursor. |
+| 17 | [KKKKhazix/khazix-skills](https://github.com/KKKKhazix/khazix-skills) | 19.7k | +386 | Lib | Agent Skills collection: leader, neat-freak, hv-analysis, khazix-writer. Chinese AI skills ecosystem. |
+| 18 | [wanshuiyin/Auto-claude-code-research-in-sleep](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep) | 14.8k | +395 | Aut | ARIS: lightweight Markdown-only skills for autonomous ML research — cross-model review loops, idea discovery, experiment automation. |
+| 19 | [aiming-lab/AutoResearchClaw](https://github.com/aiming-lab/AutoResearchClaw) | 14.0k | +56 | Aut | Fully autonomous & self-evolving research system: chat an idea, get a paper. End-to-end pipeline. |
+| 20 | [Orchestra-Research/AI-Research-SKILLs](https://github.com/Orchestra-Research/AI-Research-SKILLs) | 11.7k | +260 | Lib | AI Research Skills Library: comprehensive skill library for AI research and engineering. Claude Code, Codex, Gemini. |
+| 21 | [Imbad0202/academic-research-skills-codex](https://github.com/Imbad0202/academic-research-skills-codex) | 8.7k | +641 | Res | Codex-native Academic Research Skills suite. Full research lifecycle adapted for OpenAI Codex. |
+| 22 | [Master-cai/Research-Paper-Writing-Skills](https://github.com/Master-cai/Research-Paper-Writing-Skills) | 6.1k | +202 | Res | ML/CV/NLP paper writing skills adapted from Prof. Peng Sida's notes. Experiments, statistics, writing, LaTeX. |
+| 23 | [HKUSTDial/Supervisor-Skills](https://github.com/HKUSTDial/Supervisor-Skills) | 5.6k | +434 | Res | AI research co-advisor from 10 years of PhD supervision. Idea evaluation, paper writing, deep research, pre-submission review. |
+| 24 | [Galaxy-Dawn/claude-scholar](https://github.com/Galaxy-Dawn/claude-scholar) | 5.1k | +70 | Res | Claude Scholar: semi-automated research assistant. Ideation, coding, experiments, writing, publication. |
+| 25 | [ahmetbersoz/chatgpt-prompts-for-academic-writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing) | 4.9k | +20 | Res | Writing prompts for research: brainstorming, language editing, reviews, methodology, productivity. |
+| 26 | [WUBING2023/PaperSpine](https://github.com/WUBING2023/PaperSpine) | 4.8k | +152 | Res | PaperSpine: motivation-driven paper writing. Evidence-aware blueprints, revision matrices, LaTeX-safe audits. |
+| 27 | [coleam00/excalidraw-diagram-skill](https://github.com/coleam00/excalidraw-diagram-skill) | 4.4k | +103 | Vis | Generate beautiful Excalidraw diagrams from any coding agent. Architecture, flowcharts, sequence diagrams. |
+| 28 | [synthetic-sciences/openscience](https://github.com/synthetic-sciences/openscience) | 3.2k | +140 | Wbk | Open-source AI workbench for scientific research. Local-first, extensible, multi-agent. |
+| 29 | [markdown-viewer/skills](https://github.com/markdown-viewer/skills) | 3.1k | +18 | Vis | Opinionated skills for diagrams and visualizations in Markdown. Chart, diagram, and figure generation. |
+| 30 | [OpenNSWM-Lab/FAROS](https://github.com/OpenNSWM-Lab/FAROS) | 3.0k | −135 | Res | FAROS: blueprint-driven AutoResearch — idea to experiment to paper to review. Full cycle automation. |
+| 31 | [foryourhealth111-pixel/Vibe-Skills](https://github.com/foryourhealth111-pixel/Vibe-Skills) | 2.8k | +209 | Wbk | VibeSkills: auto-routes local Skills and orchestrates harness workflows for research agents. |
+| 32 | [openags/paper-search-mcp](https://github.com/openags/paper-search-mcp) | 2.4k | +69 | MCP | MCP, CLI, Skills for searching and downloading academic papers from arXiv, PubMed, bioRxiv. |
+| 33 | [lynote-ai/humanize-text](https://github.com/lynote-ai/humanize-text) | 1.6k | +16 | Res | Humanize text: improve readability and natural cadence for AI-assisted drafts. Strip robotic patterns. |
+| 34 | [ai4s-research/open-science](https://github.com/ai4s-research/open-science) | 1.4k | +117 | Wbk | Open Science Desktop: local-first AI research workbench (Tauri + MCP). Privacy-preserving. |
+| 35 | [lishix520/academic-paper-skills](https://github.com/lishix520/academic-paper-skills) | 1.2k | +38 | Res | Systematic framework for planning and writing papers. Strategist (planning) + composer (writing). |
+| 36 | [OpenLAIR/dr-claw](https://github.com/OpenLAIR/dr-claw) | 1.0k | +4 | Wbk | Dr-Claw: Super AI Lab with massive AI Doctors as Assistants. Best IDE for Research. |
+| 37 | [AIScientists-Dev/academic-humanizer](https://github.com/AIScientists-Dev/academic-humanizer) | 970 | +147 | Res | Strip AI-writing tells from papers and grant proposals. Make academic text sound human-authored. |
+| 38 | [QJHWC/PaperForge](https://github.com/QJHWC/PaperForge) | 616 | +2 | Res | PaperForge: end-to-end paper writing — idea to experiment to LaTeX. Anti-AI-detection built in. |
+| 39 | [genomoncology/biomcp](https://github.com/genomoncology/biomcp) | 592 | +18 | MCP | BioMCP: biomedical MCP server — PubMed, Europe PMC, entity pivoting, Claude Code integration. |
+| 40 | [hanlulong/econ-writing-skill](https://github.com/hanlulong/econ-writing-skill) | 536 | +20 | Res | Economics paper writing skill. 50+ guides synthesized (Cochrane, McCloskey, etc.). |
+| 41 | [InternScience/Awesome-Scientific-Skills](https://github.com/InternScience/Awesome-Scientific-Skills) | 508 | +5 | Lib | Curated Agent Skills for scientific research from Shanghai AI Lab. |
+| 42 | [federicodeponte/opendraft](https://github.com/federicodeponte/opendraft) | 384 | +18 | Res | Open-source AI thesis writer with 19 specialized agents. 20k-word drafts in ~10 min. |
+| 43 | [alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill) | 374 | +13 | Res | 30 Prompt templates covering full paper writing lifecycle. Structure, style, revision. |
+| 44 | [jamditis/claude-skills-journalism](https://github.com/jamditis/claude-skills-journalism) | 364 | +8 | Res | Claude skills for journalism, media, and academia. Research, interviewing, fact-checking. |
+| 45 | [WenyuChiou/ai-research-skills](https://github.com/WenyuChiou/ai-research-skills) | 208 | +12 | Lib | Universal SKILL.md catalog for research workflows. Cross-agent compatible. |
+| 46 | [Imbad0202/experiment-agent](https://github.com/Imbad0202/experiment-agent) | 175 | +6 | Res | Experiment Agent: Claude Code skill for experiment execution, monitoring, statistical interpretation. |
+| 47 | [Epsilon617/Codex-Academic-Skills](https://github.com/Epsilon617/Codex-Academic-Skills) | 168 | +3 | Res | Curated research skills for OpenAI Codex. Writing, analysis, literature review. |
+| 48 | [NeuroAIHub/awesome_cognitive_and_neuroscience_skills](https://github.com/NeuroAIHub/awesome_cognitive_and_neuroscience_skills) | 34 | — | Neu | 45 AI-generated skills from academic papers — fMRI, EEG, calcium imaging, DDM, cognitive paradigms. |
+| 49 | [YujxZJCN/teaching-skills](https://github.com/YujxZJCN/teaching-skills) | 20 | +3 | Edu | Teaching Skills for Claude Code — teaching lifecycle suite for university professors. |
+| 50 | [lhbzx1984/Light-skills](https://github.com/lhbzx1984/Light-skills) | 1 | — | Res | Light: 28 Chinese research skills (literature to submission). 9 knowledge bases. |
 
 *Cat: Off=Official, Lib=Curated Library, Res=Research & Writing, Aut=Automated Research, Vis=Visualization, MCP=MCP Server, Wbk=Workbench, Neu=Domain-Neuroscience, Edu=Education*
 
@@ -84,16 +93,16 @@ The interactive page features:
 
 | Rank | Repository | Stars | Description |
 |---|---|---|---|
-| 1 | [mattpocock/skills](https://github.com/mattpocock/skills) | 208.1k | Skills for Real Engineers — straight from .agents directory |
-| 2 | [anthropics/skills](https://github.com/anthropics/skills) | 166.8k | Official Anthropic Agent Skills — defines the SKILL.md standard |
-| 3 | [sickn33/agentic-awesome-skills](https://github.com/sickn33/agentic-awesome-skills) | 44.6k | AAS: 2,005+ agentic skills with CLI, MCP, catalog, Workbench |
-| 4 | [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | 41.3k | Academic Research Skills: 4 core skills, 42 agents, 10 quality gates |
-| 5 | [Yuan1z0825/nature-skills](https://github.com/Yuan1z0825/nature-skills) | 33.9k | Nature Skills: 11 sub-skills for Nature-style academic writing |
-| 6 | [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) | 32.9k | 158 science skills + 100+ databases for biology, chemistry, medicine |
-| 7 | [KKKKhazix/khazix-skills](https://github.com/KKKKhazix/khazix-skills) | 19.3k | Chinese AI Skills collection: leader, writer, analysis |
-| 8 | [wanshuiyin/Auto-claude-code-research-in-sleep](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep) | 14.4k | ARIS: autonomous ML research with cross-model review loops |
-| 9 | [Orchestra-Research/AI-Research-SKILLs](https://github.com/Orchestra-Research/AI-Research-SKILLs) | 11.5k | AI Research Skills Library by Orchestra Research |
-| 10 | [HKUSTDial/Supervisor-Skills](https://github.com/HKUSTDial/Supervisor-Skills) | 5.2k | AI research co-advisor from 10 years of PhD supervision |
+| 1 | [obra/superpowers](https://github.com/obra/superpowers) | 272.7k | Agentic skills framework & software development methodology that works. Plan-build-verify loops. |
+| 2 | [mattpocock/skills](https://github.com/mattpocock/skills) | 219.0k | Skills for Real Engineers. Straight from .agents directory. Production-tested agent skills. |
+| 3 | [anthropics/skills](https://github.com/anthropics/skills) | 169.7k | Official Anthropic Agent Skills — docx/pdf/pptx/xlsx, skill-creator, mcp-builder, webapp-testing. Defines the SKILL.md standard. |
+| 4 | [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | 87.7k | Production-grade engineering skills for AI coding agents. |
+| 5 | [ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills) | 72.6k | Curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows. |
+| 6 | [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) | 58.4k | AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, then synthesizes a grounded summary. |
+| 7 | [kepano/obsidian-skills](https://github.com/kepano/obsidian-skills) | 46.4k | Agent skills for Obsidian. Obsidian CLI, Markdown, Bases, JSON Canvas open formats. |
+| 8 | [sickn33/agentic-awesome-skills](https://github.com/sickn33/agentic-awesome-skills) | 45.0k | AAS: local agent-first control plane for 2,005+ agentic skills. CLI, local MCP, catalog, plugins, Workbench. |
+| 9 | [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | 42.7k | Academic Research Skills: 4 core skills, 42 agents, 10 quality gates. Full research lifecycle — literature to publication. |
+| 10 | [blader/humanizer](https://github.com/blader/humanizer) | 35.9k | Agent skill that removes signs of AI-generated writing from text. |
 
 ---
 
@@ -103,15 +112,22 @@ Foundational skill collections, often referenced as sources of truth for the SKI
 
 | Repository | Stars | Description |
 |---|---|---|
-| [mattpocock/skills](https://github.com/mattpocock/skills) | 208.1k | Skills for Real Engineers. Straight from .agents directory. |
-| [anthropics/skills](https://github.com/anthropics/skills) | 166.8k | Official Anthropic Agent Skills. Defines the SKILL.md standard. |
-| [davila7/claude-code-templates](https://github.com/davila7/claude-code-templates) | 30.1k | CLI for configuring and monitoring Claude Code. |
-| [sickn33/agentic-awesome-skills](https://github.com/sickn33/agentic-awesome-skills) | 44.6k | AAS: 2,005+ agentic skills with CLI, MCP, catalog, Workbench. |
-| [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) | 32.9k | 158 science skills + 100+ databases. Bio, chem, medicine, ML. |
-| [KKKKhazix/khazix-skills](https://github.com/KKKKhazix/khazix-skills) | 19.3k | Agent Skills: leader, neat-freak, hv-analysis, khazix-writer. |
-| [Orchestra-Research/AI-Research-SKILLs](https://github.com/Orchestra-Research/AI-Research-SKILLs) | 11.5k | AI Research Skills Library by Orchestra Research. |
-| [InternScience/Awesome-Scientific-Skills](https://github.com/InternScience/Awesome-Scientific-Skills) | 503 | Curated Agent Skills for scientific research (Shanghai AI Lab). |
-| [WenyuChiou/ai-research-skills](https://github.com/WenyuChiou/ai-research-skills) | 196 | Universal SKILL.md catalog for research workflows. |
+| [obra/superpowers](https://github.com/obra/superpowers) | 272.7k | Agentic skills framework & software development methodology that works. Plan-build-verify loops. |
+| [mattpocock/skills](https://github.com/mattpocock/skills) | 219.0k | Skills for Real Engineers. Straight from .agents directory. |
+| [anthropics/skills](https://github.com/anthropics/skills) | 169.7k | Official Anthropic Agent Skills. Defines the SKILL.md standard. |
+| [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | 87.7k | Production-grade engineering skills for AI coding agents. |
+| [ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills) | 72.6k | Curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows. |
+| [kepano/obsidian-skills](https://github.com/kepano/obsidian-skills) | 46.4k | Agent skills for Obsidian. Obsidian CLI, Markdown, Bases, JSON Canvas open formats. |
+| [sickn33/agentic-awesome-skills](https://github.com/sickn33/agentic-awesome-skills) | 45.0k | AAS: 2,005+ agentic skills with CLI, MCP, catalog, Workbench. |
+| [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) | 33.6k | 158 science skills + 100+ databases. Bio, chem, medicine, ML. |
+| [VoltAgent/awesome-agent-skills](https://github.com/VoltAgent/awesome-agent-skills) | 30.4k | 1000+ curated agent skills from official dev teams and community. Claude Code, Codex, Gemini CLI, Cursor. |
+| [davila7/claude-code-templates](https://github.com/davila7/claude-code-templates) | 30.3k | CLI for configuring and monitoring Claude Code. |
+| [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) | 30.1k | Vercel's official collection of agent skills. |
+| [alirezarezvani/claude-skills](https://github.com/alirezarezvani/claude-skills) | 24.5k | 345 Claude Code skills & plugins: 30+ agents, 70+ commands, 330+ skills for Claude Code, Codex, Gemini CLI, Cursor. |
+| [KKKKhazix/khazix-skills](https://github.com/KKKKhazix/khazix-skills) | 19.7k | Agent Skills: leader, neat-freak, hv-analysis, khazix-writer. |
+| [Orchestra-Research/AI-Research-SKILLs](https://github.com/Orchestra-Research/AI-Research-SKILLs) | 11.7k | AI Research Skills Library by Orchestra Research. |
+| [InternScience/Awesome-Scientific-Skills](https://github.com/InternScience/Awesome-Scientific-Skills) | 508 | Curated Agent Skills for scientific research (Shanghai AI Lab). |
+| [WenyuChiou/ai-research-skills](https://github.com/WenyuChiou/ai-research-skills) | 208 | Universal SKILL.md catalog for research workflows. |
 
 ---
 
@@ -123,36 +139,38 @@ Agent Skills for the full research lifecycle — ideation, literature search, wr
 
 | Repository | Stars | Description |
 |---|---|---|
-| [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | 41.3k | Deep Research → Academic Paper → Paper Reviewer → Full Pipeline. 42 agents, 10 quality gates. |
-| [Imbad0202/academic-research-skills-codex](https://github.com/Imbad0202/academic-research-skills-codex) | 8.0k | Codex-native version of Academic Research Skills. |
-| [Yuan1z0825/nature-skills](https://github.com/Yuan1z0825/nature-skills) | 33.9k | 11 Nature-style sub-skills: writing, figures, search, PPT, review, patent. |
-| [OpenNSWM-Lab/FAROS](https://github.com/OpenNSWM-Lab/FAROS) | 3.1k | Blueprint-driven AutoResearch: idea → experiment → paper → review. |
-| [federicodeponte/opendraft](https://github.com/federicodeponte/opendraft) | 366 | Open-source AI thesis writer: 19 agents, 20k-word drafts in ~10 min. |
-| [QJHWC/PaperForge](https://github.com/QJHWC/PaperForge) | 614 | End-to-end paper writing: idea → experiment → LaTeX. Anti-AI-detection. |
+| [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) | 58.4k | AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, then synthesizes a grounded summary. |
+| [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | 42.7k | Deep Research → Academic Paper → Paper Reviewer → Full Pipeline. 42 agents, 10 quality gates. |
+| [Yuan1z0825/nature-skills](https://github.com/Yuan1z0825/nature-skills) | 35.5k | 11 Nature-style sub-skills: writing, figures, search, PPT, review, patent. |
+| [Imbad0202/academic-research-skills-codex](https://github.com/Imbad0202/academic-research-skills-codex) | 8.7k | Codex-native version of Academic Research Skills. |
+| [OpenNSWM-Lab/FAROS](https://github.com/OpenNSWM-Lab/FAROS) | 3.0k | Blueprint-driven AutoResearch: idea → experiment → paper → review. |
+| [QJHWC/PaperForge](https://github.com/QJHWC/PaperForge) | 616 | End-to-end paper writing: idea → experiment → LaTeX. Anti-AI-detection. |
+| [federicodeponte/opendraft](https://github.com/federicodeponte/opendraft) | 384 | Open-source AI thesis writer: 19 agents, 20k-word drafts in ~10 min. |
 
 ### Paper Writing & Structure
 
 | Repository | Stars | Description |
 |---|---|---|
-| [HKUSTDial/Supervisor-Skills](https://github.com/HKUSTDial/Supervisor-Skills) | 5.2k | AI research co-advisor. Idea evaluation, intro drafting, paper polish. HKUST(GZ). |
-| [Master-cai/Research-Paper-Writing-Skills](https://github.com/Master-cai/Research-Paper-Writing-Skills) | 5.9k | ML/CV/NLP paper writing from Prof. Peng Sida's notes. Experiments, stats, LaTeX. |
-| [Galaxy-Dawn/claude-scholar](https://github.com/Galaxy-Dawn/claude-scholar) | 5.0k | Claude Scholar: semi-automated research assistant. Ideation, coding, writing. |
-| [WUBING2023/PaperSpine](https://github.com/WUBING2023/PaperSpine) | 4.7k | Motivation-driven paper writing. Evidence-aware blueprints, revision matrices. |
-| [lishix520/academic-paper-skills](https://github.com/lishix520/academic-paper-skills) | 1.1k | Systematic framework: strategist (planning) + composer (writing). |
-| [alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill) | 361 | 30 Prompt templates covering full paper writing lifecycle. |
-| [hanlulong/econ-writing-skill](https://github.com/hanlulong/econ-writing-skill) | 516 | Economics paper writing. 50+ guides synthesized (Cochrane, McCloskey, etc.). |
+| [HKUSTDial/Supervisor-Skills](https://github.com/HKUSTDial/Supervisor-Skills) | 5.6k | AI research co-advisor. Idea evaluation, intro drafting, paper polish. HKUST(GZ). |
+| [Master-cai/Research-Paper-Writing-Skills](https://github.com/Master-cai/Research-Paper-Writing-Skills) | 6.1k | ML/CV/NLP paper writing from Prof. Peng Sida's notes. Experiments, stats, LaTeX. |
+| [Galaxy-Dawn/claude-scholar](https://github.com/Galaxy-Dawn/claude-scholar) | 5.1k | Claude Scholar: semi-automated research assistant. Ideation, coding, writing. |
+| [WUBING2023/PaperSpine](https://github.com/WUBING2023/PaperSpine) | 4.8k | Motivation-driven paper writing. Evidence-aware blueprints, revision matrices. |
+| [lishix520/academic-paper-skills](https://github.com/lishix520/academic-paper-skills) | 1.2k | Systematic framework: strategist (planning) + composer (writing). |
+| [alfonso0512/research-writing-skill](https://github.com/alfonso0512/research-writing-skill) | 374 | 30 Prompt templates covering full paper writing lifecycle. |
+| [hanlulong/econ-writing-skill](https://github.com/hanlulong/econ-writing-skill) | 536 | Economics paper writing. 50+ guides synthesized (Cochrane, McCloskey, etc.). |
 | [lhbzx1984/Light-skills](https://github.com/lhbzx1984/Light-skills) | 1 | Light: 28 Chinese research skills (literature → submission). 9 knowledge bases. |
 
 ### Prompts & Writing Aids
 
 | Repository | Stars | Description |
 |---|---|---|
+| [blader/humanizer](https://github.com/blader/humanizer) | 35.9k | Agent skill that removes signs of AI-generated writing from text. |
 | [ahmetbersoz/chatgpt-prompts-for-academic-writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing) | 4.9k | Writing prompts: brainstorming, language, reviews, plans. |
-| [AIScientists-Dev/academic-humanizer](https://github.com/AIScientists-Dev/academic-humanizer) | 823 | Strip AI-writing tells from papers and grant proposals. |
 | [lynote-ai/humanize-text](https://github.com/lynote-ai/humanize-text) | 1.6k | Improve readability and natural cadence of AI-assisted drafts. |
-| [Imbad0202/experiment-agent](https://github.com/Imbad0202/experiment-agent) | 169 | Experiment execution, monitoring, statistical interpretation. |
-| [Epsilon617/Codex-Academic-Skills](https://github.com/Epsilon617/Codex-Academic-Skills) | 165 | Curated research skills for OpenAI Codex. |
-| [jamditis/claude-skills-journalism](https://github.com/jamditis/claude-skills-journalism) | 356 | Claude skills for journalism, media, and academia. |
+| [AIScientists-Dev/academic-humanizer](https://github.com/AIScientists-Dev/academic-humanizer) | 970 | Strip AI-writing tells from papers and grant proposals. |
+| [jamditis/claude-skills-journalism](https://github.com/jamditis/claude-skills-journalism) | 364 | Claude skills for journalism, media, and academia. |
+| [Imbad0202/experiment-agent](https://github.com/Imbad0202/experiment-agent) | 175 | Experiment execution, monitoring, statistical interpretation. |
+| [Epsilon617/Codex-Academic-Skills](https://github.com/Epsilon617/Codex-Academic-Skills) | 168 | Curated research skills for OpenAI Codex. |
 
 ### Nature Skills — Sub-Skill Catalog
 
@@ -178,7 +196,7 @@ Skills that orchestrate end-to-end autonomous research — from idea to paper.
 
 | Repository | Stars | Description |
 |---|---|---|
-| [wanshuiyin/Auto-claude-code-research-in-sleep](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep) | 14.4k | ARIS: autonomous ML research — cross-model review, idea discovery, experiment automation. Markdown-only, no lock-in. |
+| [wanshuiyin/Auto-claude-code-research-in-sleep](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep) | 14.8k | ARIS: autonomous ML research — cross-model review, idea discovery, experiment automation. Markdown-only, no lock-in. |
 | [aiming-lab/AutoResearchClaw](https://github.com/aiming-lab/AutoResearchClaw) | 14.0k | Fully autonomous & self-evolving research: chat an idea, get a paper. |
 
 ---
@@ -189,7 +207,7 @@ Agent skills for generating figures, diagrams, and visualizations.
 
 | Repository | Stars | Description |
 |---|---|---|
-| [coleam00/excalidraw-diagram-skill](https://github.com/coleam00/excalidraw-diagram-skill) | 4.3k | Generate beautiful Excalidraw diagrams from any coding agent. |
+| [coleam00/excalidraw-diagram-skill](https://github.com/coleam00/excalidraw-diagram-skill) | 4.4k | Generate beautiful Excalidraw diagrams from any coding agent. |
 | [markdown-viewer/skills](https://github.com/markdown-viewer/skills) | 3.1k | Opinionated skills for diagrams and visualizations in Markdown. |
 
 ---
@@ -203,15 +221,15 @@ MCP (Model Context Protocol) servers and agent workbenches that extend agent cap
 | Repository | Stars | Description |
 |---|---|---|
 | [openags/paper-search-mcp](https://github.com/openags/paper-search-mcp) | 2.4k | Paper search MCP: arXiv, PubMed, bioRxiv. |
-| [genomoncology/biomcp](https://github.com/genomoncology/biomcp) | 574 | BioMCP: biomedical MCP — PubMed, Europe PMC, entity pivoting. |
+| [genomoncology/biomcp](https://github.com/genomoncology/biomcp) | 592 | BioMCP: biomedical MCP — PubMed, Europe PMC, entity pivoting. |
 
 ### Workbenches
 
 | Repository | Stars | Description |
 |---|---|---|
-| [synthetic-sciences/openscience](https://github.com/synthetic-sciences/openscience) | 3.1k | Open-source AI workbench for scientific research. |
-| [foryourhealth111-pixel/Vibe-Skills](https://github.com/foryourhealth111-pixel/Vibe-Skills) | 2.6k | VibeSkills: auto-routes local Skills and orchestrates harness workflows. |
-| [ai4s-research/open-science](https://github.com/ai4s-research/open-science) | 1.2k | Open Science Desktop: local-first AI research workbench (Tauri + MCP). |
+| [synthetic-sciences/openscience](https://github.com/synthetic-sciences/openscience) | 3.2k | Open-source AI workbench for scientific research. |
+| [foryourhealth111-pixel/Vibe-Skills](https://github.com/foryourhealth111-pixel/Vibe-Skills) | 2.8k | VibeSkills: auto-routes local Skills and orchestrates harness workflows. |
+| [ai4s-research/open-science](https://github.com/ai4s-research/open-science) | 1.4k | Open Science Desktop: local-first AI research workbench (Tauri + MCP). |
 | [OpenLAIR/dr-claw](https://github.com/OpenLAIR/dr-claw) | 1.0k | Dr-Claw: Super AI Lab with AI Doctors as Assistants. |
 
 ---
@@ -250,31 +268,13 @@ Skills for teaching and learning workflows.
 
 | Repository | Stars | Description |
 |---|---|---|
-| [YujxZJCN/teaching-skills](https://github.com/YujxZJCN/teaching-skills) | 17 | Teaching lifecycle suite for university professors. |
+| [YujxZJCN/teaching-skills](https://github.com/YujxZJCN/teaching-skills) | 20 | Teaching lifecycle suite for university professors. |
 
 ---
 
-## Refresh Guide
+## Maintenance
 
-### How Refresh Works
-
-Say **"refresh"** to [WorkBuddy](https://codebuddy.ai). The assistant will:
-
-1. **Scan**: Search GitHub, SkillsMP, and the web for new Agent Skills
-2. **Fetch stars**: Query GitHub API for current star counts
-3. **Compute weekly Δ**: Compare against [`stars-baseline.json`](stars-baseline.json)
-4. **Update baseline**: Replace baseline with current counts
-5. **Sort & rewrite**: Regenerate README and interactive page
-6. **Commit & push**: `git add -A && git commit -m "Refresh: ..." && git push`
-
-### Refresh Metadata
-
-- **Last refreshed**: 2026-08-07
-- **Repos tracked**: 41
-- **Method**: Conversation-triggered (say "refresh" to WorkBuddy)
-- **Scope**: Strictly Agent Skills (SKILL.md, MCP, workbenches). Pure tools excluded.
-
----
+This board is refreshed periodically. Star counts come from the GitHub API; deltas are computed against the previous scan (`stars-baseline.json`).
 
 ## Contributing
 
