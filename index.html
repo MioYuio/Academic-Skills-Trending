@@ -78,9 +78,9 @@ h1{font-size:22px;font-weight:600;margin-bottom:4px}
   <h1>Academic Skills Trending <span class="scope-badge">Agent Skills only</span></h1>
   <p class="subtitle">AI agent skills (SKILL.md format) for scientific research, sorted by GitHub stars. Hover for details.</p>
   <div class="meta">
-    <span class="meta-item">50 repos tracked</span>
-    <span class="meta-item">Updated: 2026-08-17</span>
-    <span class="meta-item">&Delta; vs 2026-08-07 baseline (10 days)</span>
+    <span class="meta-item">55 repos tracked</span>
+    <span class="meta-item">Updated: 2026-09-06</span>
+    <span class="meta-item">&Delta; vs 2026-08-17 baseline (20 days)</span>
   </div>
 
   <div class="legend" id="legend"></div>
@@ -105,7 +105,7 @@ h1{font-size:22px;font-weight:600;margin-bottom:4px}
   </div>
 
   <div id="all-section">
-    <div class="section-header">Full ranking (50 repos)</div>
+    <div class="section-header">Full ranking (55 repos)</div>
     <div class="bar-list" id="all-list"></div>
   </div>
 
@@ -144,59 +144,64 @@ var CAT_LABELS = {
 };
 
 var REPOS = [
-  {name:"obra/superpowers",stars:272702,forks:24379,delta:null,cat:"curated",desc:"Agentic skills framework & software development methodology that works. Plan-build-verify loops."},
-  {name:"mattpocock/skills",stars:219016,forks:18872,delta:10909,cat:"official",desc:"Skills for Real Engineers. Straight from .agents directory. Production-tested agent skills."},
-  {name:"anthropics/skills",stars:169694,forks:20199,delta:2855,cat:"official",desc:"Official Anthropic Agent Skills — docx/pdf/pptx/xlsx, skill-creator, mcp-builder, webapp-testing. Defines the SKILL.md standard."},
-  {name:"addyosmani/agent-skills",stars:87672,forks:9394,delta:null,cat:"curated",desc:"Production-grade engineering skills for AI coding agents."},
-  {name:"ComposioHQ/awesome-claude-skills",stars:72602,forks:8285,delta:null,cat:"curated",desc:"Curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows."},
-  {name:"mvanhorn/last30days-skill",stars:58368,forks:5074,delta:null,cat:"research",desc:"AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, then synthesizes a grounded summary."},
-  {name:"kepano/obsidian-skills",stars:46357,forks:3324,delta:null,cat:"official",desc:"Agent skills for Obsidian. Obsidian CLI, Markdown, Bases, JSON Canvas open formats."},
-  {name:"sickn33/agentic-awesome-skills",stars:45013,forks:6585,delta:424,cat:"curated",desc:"AAS: local agent-first control plane for 2,005+ agentic skills. CLI, local MCP, catalog, plugins, Workbench."},
-  {name:"Imbad0202/academic-research-skills",stars:42690,forks:3398,delta:1437,cat:"research",desc:"Academic Research Skills: 4 core skills, 42 agents, 10 quality gates. Full research lifecycle — literature to publication."},
-  {name:"blader/humanizer",stars:35926,forks:3199,delta:null,cat:"research",desc:"Agent skill that removes signs of AI-generated writing from text."},
-  {name:"Yuan1z0825/nature-skills",stars:35462,forks:1997,delta:1553,cat:"research",desc:"Nature Skills: 11 sub-skills for Nature-style academic writing, figures, literature search, paper-to-PPT, reviewer response, patent drafting."},
-  {name:"K-Dense-AI/scientific-agent-skills",stars:33645,forks:3289,delta:756,cat:"curated",desc:"158 science skills + 100+ databases: biology, chemistry, medicine, drug discovery, ML, visualization, lab automation."},
-  {name:"VoltAgent/awesome-agent-skills",stars:30386,forks:3277,delta:null,cat:"curated",desc:"1000+ curated agent skills from official dev teams and community. Claude Code, Codex, Gemini CLI, Cursor."},
-  {name:"davila7/claude-code-templates",stars:30260,forks:3405,delta:117,cat:"official",desc:"CLI for configuring and monitoring Claude Code. Templates, hooks, MCP configs, and skill management."},
-  {name:"vercel-labs/agent-skills",stars:30091,forks:2684,delta:null,cat:"official",desc:"Vercel's official collection of agent skills."},
-  {name:"alirezarezvani/claude-skills",stars:24511,forks:3442,delta:null,cat:"curated",desc:"345 Claude Code skills & plugins: 30+ agents, 70+ commands, 330+ skills for Claude Code, Codex, Gemini CLI, Cursor."},
-  {name:"KKKKhazix/khazix-skills",stars:19734,forks:2145,delta:386,cat:"curated",desc:"Agent Skills collection: leader, neat-freak, hv-analysis, khazix-writer. Chinese AI skills ecosystem."},
-  {name:"wanshuiyin/Auto-claude-code-research-in-sleep",stars:14757,forks:1299,delta:395,cat:"automated",desc:"ARIS: lightweight Markdown-only skills for autonomous ML research — cross-model review loops, idea discovery, experiment automation."},
-  {name:"aiming-lab/AutoResearchClaw",stars:14029,forks:1639,delta:56,cat:"automated",desc:"Fully autonomous & self-evolving research system: chat an idea, get a paper. End-to-end pipeline."},
-  {name:"Orchestra-Research/AI-Research-SKILLs",stars:11746,forks:858,delta:260,cat:"curated",desc:"AI Research Skills Library: comprehensive skill library for AI research and engineering. Claude Code, Codex, Gemini."},
-  {name:"Imbad0202/academic-research-skills-codex",stars:8660,forks:408,delta:641,cat:"research",desc:"Codex-native Academic Research Skills suite. Full research lifecycle adapted for OpenAI Codex."},
-  {name:"Master-cai/Research-Paper-Writing-Skills",stars:6070,forks:297,delta:202,cat:"research",desc:"ML/CV/NLP paper writing skills adapted from Prof. Peng Sida's notes. Experiments, statistics, writing, LaTeX."},
-  {name:"HKUSTDial/Supervisor-Skills",stars:5615,forks:379,delta:434,cat:"research",desc:"AI research co-advisor from 10 years of PhD supervision. Idea evaluation, paper writing, deep research, pre-submission review."},
-  {name:"Galaxy-Dawn/claude-scholar",stars:5094,forks:416,delta:70,cat:"research",desc:"Claude Scholar: semi-automated research assistant. Ideation, coding, experiments, writing, publication."},
-  {name:"ahmetbersoz/chatgpt-prompts-for-academic-writing",stars:4890,forks:389,delta:20,cat:"research",desc:"Writing prompts for research: brainstorming, language editing, reviews, methodology, productivity."},
-  {name:"WUBING2023/PaperSpine",stars:4837,forks:189,delta:152,cat:"research",desc:"PaperSpine: motivation-driven paper writing. Evidence-aware blueprints, revision matrices, LaTeX-safe audits."},
-  {name:"coleam00/excalidraw-diagram-skill",stars:4442,forks:504,delta:103,cat:"visualization",desc:"Generate beautiful Excalidraw diagrams from any coding agent. Architecture, flowcharts, sequence diagrams."},
-  {name:"synthetic-sciences/openscience",stars:3244,forks:442,delta:140,cat:"workbench",desc:"Open-source AI workbench for scientific research. Local-first, extensible, multi-agent."},
-  {name:"markdown-viewer/skills",stars:3133,forks:181,delta:18,cat:"visualization",desc:"Opinionated skills for diagrams and visualizations in Markdown. Chart, diagram, and figure generation."},
-  {name:"OpenNSWM-Lab/FAROS",stars:2991,forks:355,delta:-135,cat:"research",desc:"FAROS: blueprint-driven AutoResearch — idea to experiment to paper to review. Full cycle automation."},
-  {name:"foryourhealth111-pixel/Vibe-Skills",stars:2842,forks:227,delta:209,cat:"workbench",desc:"VibeSkills: auto-routes local Skills and orchestrates harness workflows for research agents."},
-  {name:"openags/paper-search-mcp",stars:2436,forks:238,delta:69,cat:"mcp",desc:"MCP, CLI, Skills for searching and downloading academic papers from arXiv, PubMed, bioRxiv."},
-  {name:"lynote-ai/humanize-text",stars:1566,forks:97,delta:16,cat:"research",desc:"Humanize text: improve readability and natural cadence for AI-assisted drafts. Strip robotic patterns."},
-  {name:"ai4s-research/open-science",stars:1357,forks:150,delta:117,cat:"workbench",desc:"Open Science Desktop: local-first AI research workbench (Tauri + MCP). Privacy-preserving."},
-  {name:"lishix520/academic-paper-skills",stars:1180,forks:129,delta:38,cat:"research",desc:"Systematic framework for planning and writing papers. Strategist (planning) + composer (writing)."},
-  {name:"OpenLAIR/dr-claw",stars:1045,forks:117,delta:4,cat:"workbench",desc:"Dr-Claw: Super AI Lab with massive AI Doctors as Assistants. Best IDE for Research."},
-  {name:"AIScientists-Dev/academic-humanizer",stars:970,forks:105,delta:147,cat:"research",desc:"Strip AI-writing tells from papers and grant proposals. Make academic text sound human-authored."},
-  {name:"QJHWC/PaperForge",stars:616,forks:93,delta:2,cat:"research",desc:"PaperForge: end-to-end paper writing — idea to experiment to LaTeX. Anti-AI-detection built in."},
-  {name:"genomoncology/biomcp",stars:592,forks:113,delta:18,cat:"mcp",desc:"BioMCP: biomedical MCP server — PubMed, Europe PMC, entity pivoting, Claude Code integration."},
-  {name:"hanlulong/econ-writing-skill",stars:536,forks:86,delta:20,cat:"research",desc:"Economics paper writing skill. 50+ guides synthesized (Cochrane, McCloskey, etc.)."},
-  {name:"InternScience/Awesome-Scientific-Skills",stars:508,forks:38,delta:5,cat:"curated",desc:"Curated Agent Skills for scientific research from Shanghai AI Lab."},
-  {name:"federicodeponte/opendraft",stars:384,forks:71,delta:18,cat:"research",desc:"Open-source AI thesis writer with 19 specialized agents. 20k-word drafts in ~10 min."},
-  {name:"alfonso0512/research-writing-skill",stars:374,forks:31,delta:13,cat:"research",desc:"30 Prompt templates covering full paper writing lifecycle. Structure, style, revision."},
-  {name:"jamditis/claude-skills-journalism",stars:364,forks:62,delta:8,cat:"research",desc:"Claude skills for journalism, media, and academia. Research, interviewing, fact-checking."},
-  {name:"WenyuChiou/ai-research-skills",stars:208,forks:14,delta:12,cat:"curated",desc:"Universal SKILL.md catalog for research workflows. Cross-agent compatible."},
-  {name:"Imbad0202/experiment-agent",stars:175,forks:11,delta:6,cat:"research",desc:"Experiment Agent: Claude Code skill for experiment execution, monitoring, statistical interpretation."},
-  {name:"Epsilon617/Codex-Academic-Skills",stars:168,forks:7,delta:3,cat:"research",desc:"Curated research skills for OpenAI Codex. Writing, analysis, literature review."},
-  {name:"NeuroAIHub/awesome_cognitive_and_neuroscience_skills",stars:34,forks:5,delta:0,cat:"domain-neuro",desc:"45 AI-generated skills from academic papers — fMRI, EEG, calcium imaging, DDM, cognitive paradigms."},
-  {name:"YujxZJCN/teaching-skills",stars:20,forks:4,delta:3,cat:"education",desc:"Teaching Skills for Claude Code — teaching lifecycle suite for university professors."},
+  {name:"obra/superpowers",stars:282294,forks:25291,delta:9592,cat:"curated",desc:"Agentic skills framework & software development methodology that works. Plan-build-verify loops."},
+  {name:"mattpocock/skills",stars:253980,forks:21431,delta:34964,cat:"official",desc:"Skills for Real Engineers. Straight from .agents directory. Production-tested agent skills."},
+  {name:"anthropics/skills",stars:174804,forks:20691,delta:5110,cat:"official",desc:"Official Anthropic Agent Skills — docx/pdf/pptx/xlsx, skill-creator, mcp-builder, webapp-testing. Defines the SKILL.md standard."},
+  {name:"addyosmani/agent-skills",stars:92533,forks:9867,delta:4861,cat:"curated",desc:"Production-grade engineering skills for AI coding agents."},
+  {name:"ComposioHQ/awesome-claude-skills",stars:74582,forks:8585,delta:1980,cat:"curated",desc:"Curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows."},
+  {name:"mvanhorn/last30days-skill",stars:61413,forks:5363,delta:3045,cat:"research",desc:"AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, then synthesizes a grounded summary."},
+  {name:"tt-a1i/archify",stars:50395,forks:3275,delta:null,cat:"visualization",desc:"Agent skill for architecture, workflow, sequence, data-flow, and lifecycle diagrams. Self-contained HTML with motion."},
+  {name:"kepano/obsidian-skills",stars:47933,forks:3428,delta:1576,cat:"official",desc:"Agent skills for Obsidian. Obsidian CLI, Markdown, Bases, JSON Canvas open formats."},
+  {name:"Imbad0202/academic-research-skills",stars:46534,forks:3650,delta:3844,cat:"research",desc:"Academic Research Skills: 4 core skills, 42 agents, 10 quality gates. Full research lifecycle — literature to publication."},
+  {name:"sickn33/agentic-awesome-skills",stars:46061,forks:6733,delta:1048,cat:"curated",desc:"AAS: local agent-first control plane for 2,005+ agentic skills. CLI, local MCP, catalog, plugins, Workbench."},
+  {name:"blader/humanizer",stars:43978,forks:3670,delta:8052,cat:"research",desc:"Agent skill that removes signs of AI-generated writing from text."},
+  {name:"K-Dense-AI/scientific-agent-skills",stars:43215,forks:3939,delta:9570,cat:"curated",desc:"158 science skills + 100+ databases: biology, chemistry, medicine, drug discovery, ML, visualization, lab automation."},
+  {name:"Yuan1z0825/nature-skills",stars:39572,forks:2162,delta:4110,cat:"research",desc:"Nature Skills: 11 sub-skills for Nature-style academic writing, figures, literature search, paper-to-PPT, reviewer response, patent drafting."},
+  {name:"VoltAgent/awesome-agent-skills",stars:33828,forks:3579,delta:3442,cat:"curated",desc:"1000+ curated agent skills from official dev teams and community. Claude Code, Codex, Gemini CLI, Cursor."},
+  {name:"vercel-labs/agent-skills",stars:30898,forks:2740,delta:807,cat:"official",desc:"Vercel's official collection of agent skills."},
+  {name:"davila7/claude-code-templates",stars:30546,forks:3463,delta:286,cat:"official",desc:"CLI for configuring and monitoring Claude Code. Templates, hooks, MCP configs, and skill management."},
+  {name:"vercel-labs/skills",stars:30503,forks:2617,delta:null,cat:"official",desc:"The open agent skills tool — npx skills. Install and manage skills across coding agents."},
+  {name:"phuryn/pm-skills",stars:26043,forks:2798,delta:null,cat:"curated",desc:"PM Skills Marketplace: 100+ agentic skills, commands, and plugins. Product discovery to strategy, launch, growth."},
+  {name:"op7418/guizang-ppt-skill",stars:25728,forks:1815,delta:null,cat:"visualization",desc:"AI-agent skill for polished HTML slide decks: editorial magazine and Swiss layouts, WebGL presentation runtime."},
+  {name:"alirezarezvani/claude-skills",stars:25599,forks:3620,delta:1088,cat:"curated",desc:"345 Claude Code skills & plugins: 30+ agents, 70+ commands, 330+ skills for Claude Code, Codex, Gemini CLI, Cursor."},
+  {name:"agentskills/agentskills",stars:25081,forks:1881,delta:null,cat:"official",desc:"Specification and documentation for Agent Skills — the open SKILL.md standard (agentskills.io)."},
+  {name:"KKKKhazix/khazix-skills",stars:20457,forks:2188,delta:723,cat:"curated",desc:"Agent Skills collection: leader, neat-freak, hv-analysis, khazix-writer. Chinese AI skills ecosystem."},
+  {name:"wanshuiyin/Auto-claude-code-research-in-sleep",stars:15789,forks:1372,delta:1032,cat:"automated",desc:"ARIS: lightweight Markdown-only skills for autonomous ML research — cross-model review loops, idea discovery, experiment automation."},
+  {name:"aiming-lab/AutoResearchClaw",stars:14348,forks:1668,delta:319,cat:"automated",desc:"Fully autonomous & self-evolving research system: chat an idea, get a paper. End-to-end pipeline."},
+  {name:"Orchestra-Research/AI-Research-SKILLs",stars:12363,forks:896,delta:617,cat:"curated",desc:"AI Research Skills Library: comprehensive skill library for AI research and engineering. Claude Code, Codex, Gemini."},
+  {name:"Imbad0202/academic-research-skills-codex",stars:10137,forks:463,delta:1477,cat:"research",desc:"Codex-native Academic Research Skills suite. Full research lifecycle adapted for OpenAI Codex."},
+  {name:"HKUSTDial/Supervisor-Skills",stars:6614,forks:429,delta:999,cat:"research",desc:"AI research co-advisor from 10 years of PhD supervision. Idea evaluation, paper writing, deep research, pre-submission review."},
+  {name:"Master-cai/Research-Paper-Writing-Skills",stars:6585,forks:319,delta:515,cat:"research",desc:"ML/CV/NLP paper writing skills adapted from Prof. Peng Sida's notes. Experiments, statistics, writing, LaTeX."},
+  {name:"Galaxy-Dawn/claude-scholar",stars:5346,forks:418,delta:252,cat:"research",desc:"Claude Scholar: semi-automated research assistant. Ideation, coding, experiments, writing, publication."},
+  {name:"WUBING2023/PaperSpine",stars:5128,forks:200,delta:291,cat:"research",desc:"PaperSpine: motivation-driven paper writing. Evidence-aware blueprints, revision matrices, LaTeX-safe audits."},
+  {name:"ahmetbersoz/chatgpt-prompts-for-academic-writing",stars:4924,forks:395,delta:34,cat:"research",desc:"Writing prompts for research: brainstorming, language editing, reviews, methodology, productivity."},
+  {name:"coleam00/excalidraw-diagram-skill",stars:4700,forks:532,delta:258,cat:"visualization",desc:"Generate beautiful Excalidraw diagrams from any coding agent. Architecture, flowcharts, sequence diagrams."},
+  {name:"synthetic-sciences/openscience",stars:3496,forks:468,delta:252,cat:"workbench",desc:"Open-source AI workbench for scientific research. Local-first, extensible, multi-agent."},
+  {name:"markdown-viewer/skills",stars:3288,forks:190,delta:155,cat:"visualization",desc:"Opinionated skills for diagrams and visualizations in Markdown. Chart, diagram, and figure generation."},
+  {name:"foryourhealth111-pixel/Vibe-Skills",stars:3182,forks:264,delta:340,cat:"workbench",desc:"VibeSkills: auto-routes local Skills and orchestrates harness workflows for research agents."},
+  {name:"OpenNSWM-Lab/FAROS",stars:3036,forks:390,delta:45,cat:"research",desc:"FAROS: blueprint-driven AutoResearch — idea to experiment to paper to review. Full cycle automation."},
+  {name:"openags/paper-search-mcp",stars:2575,forks:255,delta:139,cat:"mcp",desc:"MCP, CLI, Skills for searching and downloading academic papers from arXiv, PubMed, bioRxiv."},
+  {name:"lynote-ai/humanize-text",stars:1600,forks:102,delta:34,cat:"research",desc:"Humanize text: improve readability and natural cadence for AI-assisted drafts. Strip robotic patterns."},
+  {name:"ai4s-research/open-science",stars:1594,forks:191,delta:237,cat:"workbench",desc:"Open Science Desktop: local-first AI research workbench (Tauri + MCP). Privacy-preserving."},
+  {name:"AIScientists-Dev/academic-humanizer",stars:1416,forks:129,delta:446,cat:"research",desc:"Strip AI-writing tells from papers and grant proposals. Make academic text sound human-authored."},
+  {name:"lishix520/academic-paper-skills",stars:1260,forks:136,delta:80,cat:"research",desc:"Systematic framework for planning and writing papers. Strategist (planning) + composer (writing)."},
+  {name:"OpenLAIR/dr-claw",stars:1058,forks:117,delta:13,cat:"workbench",desc:"Dr-Claw: Super AI Lab with massive AI Doctors as Assistants. Best IDE for Research."},
+  {name:"QJHWC/PaperForge",stars:629,forks:96,delta:13,cat:"research",desc:"PaperForge: end-to-end paper writing — idea to experiment to LaTeX. Anti-AI-detection built in."},
+  {name:"genomoncology/biomcp",stars:625,forks:113,delta:33,cat:"mcp",desc:"BioMCP: biomedical MCP server — PubMed, Europe PMC, entity pivoting, Claude Code integration."},
+  {name:"hanlulong/econ-writing-skill",stars:586,forks:91,delta:50,cat:"research",desc:"Economics paper writing skill. 50+ guides synthesized (Cochrane, McCloskey, etc.)."},
+  {name:"InternScience/Awesome-Scientific-Skills",stars:540,forks:42,delta:32,cat:"curated",desc:"Curated Agent Skills for scientific research from Shanghai AI Lab."},
+  {name:"alfonso0512/research-writing-skill",stars:417,forks:33,delta:43,cat:"research",desc:"30 Prompt templates covering full paper writing lifecycle. Structure, style, revision."},
+  {name:"federicodeponte/opendraft",stars:401,forks:75,delta:17,cat:"research",desc:"Open-source AI thesis writer with 19 specialized agents. 20k-word drafts in ~10 min."},
+  {name:"jamditis/claude-skills-journalism",stars:387,forks:65,delta:23,cat:"research",desc:"Claude skills for journalism, media, and academia. Research, interviewing, fact-checking."},
+  {name:"WenyuChiou/ai-research-skills",stars:240,forks:16,delta:32,cat:"curated",desc:"Universal SKILL.md catalog for research workflows. Cross-agent compatible."},
+  {name:"Imbad0202/experiment-agent",stars:185,forks:12,delta:10,cat:"research",desc:"Experiment Agent: Claude Code skill for experiment execution, monitoring, statistical interpretation."},
+  {name:"Epsilon617/Codex-Academic-Skills",stars:179,forks:8,delta:11,cat:"research",desc:"Curated research skills for OpenAI Codex. Writing, analysis, literature review."},
+  {name:"NeuroAIHub/awesome_cognitive_and_neuroscience_skills",stars:37,forks:5,delta:3,cat:"domain-neuro",desc:"45 AI-generated skills from academic papers — fMRI, EEG, calcium imaging, DDM, cognitive paradigms."},
+  {name:"YujxZJCN/teaching-skills",stars:26,forks:6,delta:6,cat:"education",desc:"Teaching Skills for Claude Code — teaching lifecycle suite for university professors."},
   {name:"lhbzx1984/Light-skills",stars:1,forks:0,delta:0,cat:"research",desc:"Light: 28 Chinese research skills (literature to submission). 9 knowledge bases."}
 ];
 
-var maxStars = 272702;
+var maxStars = 282294;
 var activeFilter = 'all';
 var searchTerm = '';
 
