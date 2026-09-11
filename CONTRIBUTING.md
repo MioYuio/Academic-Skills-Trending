@@ -1,62 +1,43 @@
-# Contributing to Awesome Research Skills
+# Contributing to Academic Skills Trending
 
-Thank you for your interest in contributing! This repository curates AI agent skills, tools, and frameworks for scientific research across neuroscience, brain-inspired intelligence, LLMs, and embodied intelligence.
+This board tracks AI Agent Skills for scientific research, including neuroscience, brain-inspired intelligence, LLM research, and research visualization.
 
-## How to Contribute
+## Adding an Entry
 
-### Adding a New Entry
+1. Check the board for duplicates, including renamed repositories and forks.
+2. Provide the repository URL and a direct link to at least one substantive `SKILL.md` file.
+3. Describe the research capability and select the closest existing category.
+4. Identify the license and any important limitations.
+5. Submit a pull request with a short, factual description.
 
-1. **Check for duplicates** — search the README.md to ensure the entry isn't already listed
-2. **Determine the category** — pick the most appropriate domain section
-3. **Format the entry** — follow the existing table format:
+Use the existing table format:
 
-For skill collections:
 ```
-| [owner/repo](https://github.com/owner/repo) | N skills | ⭐ Xk | Description | Compatibility |
-```
-
-For individual tools/libraries:
-```
-| [Tool](https://github.com/owner/repo) | Language | Description |
+| [owner/repo](https://github.com/owner/repo) | Star count | Description |
 ```
 
-For awesome lists:
-```
-| [owner/repo](https://github.com/owner/repo) | ⭐ Xk | Description |
-```
+## Inclusion Criteria
 
-4. **Submit a pull request** with a clear title describing what you're adding
+- Contains documented Agent Skills following the `SKILL.md` format.
+- Gives an AI agent capabilities relevant to research workflows.
+- Has publicly accessible source and clear licensing.
+- Is maintained and sufficiently documented to evaluate.
+- MCP servers and workbenches qualify only when they also include Agent Skills.
 
-### Criteria for Inclusion
+## Exclusion Criteria
 
-- **Relevance**: Directly relevant to at least one of the four core domains
-- **Open source**: Publicly available with clear license
-- **Quality**: Well-documented, actively maintained (preferably updated within 12 months)
-- **Research-oriented**: Designed for or applicable to scientific research workflows
-- **For skills**: Follows the SKILL.md standard (Anthropic/Agent Skills) or equivalent
+- Pure tools, simulators, frameworks, or libraries without Agent Skills.
+- Prompt lists or resource directories without their own `SKILL.md` files.
+- Duplicate forks, closed-source packages, or unverifiable capability claims.
 
-### Categories
+## Categories
 
-| Category | Scope |
-|---|---|
-| Neuroscience & Cognitive Science | Neuroimaging, electrophysiology, neural data analysis, cognitive modeling |
-| Brain-Inspired Intelligence & Neuromorphic | SNNs, neuromorphic hardware, brain-inspired cognitive engines |
-| LLM & AI Research Skills | AI-assisted research, automated experimentation, model training, scientific writing |
-| Embodied Intelligence & Robotics | Robot learning, VLA models, simulators, benchmarks |
-| Cross-Domain Research Tools | Literature search, statistics, visualization, publication tools |
+Official, Curated Library, Research & Writing, Automated Research, Visualization, Workbench, MCP Server, Neuroscience, and Education.
 
-### Refresh Process
+## Data and Maintenance
 
-This repository supports conversation-triggered refresh. When you say "refresh" to [WorkBuddy](https://codebuddy.ai), it will:
-
-1. Search GitHub, SkillsMP, ClaudSkills, and the web for new resources
-2. Deduplicate against existing entries
-3. Categorize new finds
-4. Update README.md with new entries and refreshed metadata
-5. Commit and push changes
-
-You can also manually submit PRs for new entries at any time.
+Star counts come from GitHub. Changes are measured against the previous scan; new entries have no prior comparison. Ranking reflects popularity, not a security audit or scientific validation.
 
 ## Code of Conduct
 
-Be respectful and constructive. This is a community resource meant to help researchers discover useful tools.
+Be respectful, constructive, and precise. Report incorrect metadata or scope mismatches with source links.
