@@ -1,325 +1,370 @@
 {
-  "last_scan": "2026-09-11",
-  "note": "Snapshot from 2026-09-11. Use these counts as the baseline for the next scan.",
+  "last_scan": "2026-11-02",
+  "note": "Snapshot from 2026-11-02. Use these counts as the baseline for the next scan.",
   "repos": {
     "obra/superpowers": {
-      "stars": 285012,
-      "forks": 25491,
+      "stars": 310858,
+      "forks": 27665,
       "category": "curated"
     },
     "mattpocock/skills": {
-      "stars": 259265,
-      "forks": 21851,
+      "stars": 309546,
+      "forks": 26048,
       "category": "official"
     },
     "affaan-m/ECC": {
-      "stars": 256152,
-      "forks": 38336,
+      "stars": 295036,
+      "forks": 43674,
       "category": "curated"
     },
     "anthropics/skills": {
-      "stars": 175753,
-      "forks": 20796,
+      "stars": 186517,
+      "forks": 22032,
       "category": "official"
     },
     "addyosmani/agent-skills": {
-      "stars": 93478,
-      "forks": 9943,
+      "stars": 112637,
+      "forks": 11789,
       "category": "curated"
     },
+    "tt-a1i/archify": {
+      "stars": 92546,
+      "forks": 6316,
+      "category": "visualization"
+    },
     "bytedance/deer-flow": {
-      "stars": 82270,
-      "forks": 11343,
+      "stars": 84868,
+      "forks": 11925,
       "category": "workbench"
     },
     "ComposioHQ/awesome-claude-skills": {
-      "stars": 74853,
-      "forks": 8637,
+      "stars": 78545,
+      "forks": 9490,
       "category": "curated"
     },
     "mvanhorn/last30days-skill": {
-      "stars": 61834,
-      "forks": 5391,
-      "category": "research"
-    },
-    "tt-a1i/archify": {
-      "stars": 57968,
-      "forks": 3784,
-      "category": "visualization"
-    },
-    "kepano/obsidian-skills": {
-      "stars": 48154,
-      "forks": 3435,
-      "category": "official"
-    },
-    "Imbad0202/academic-research-skills": {
-      "stars": 47608,
-      "forks": 3719,
+      "stars": 66300,
+      "forks": 5789,
       "category": "research"
     },
     "blader/humanizer": {
-      "stars": 46700,
-      "forks": 3816,
+      "stars": 63689,
+      "forks": 5038,
       "category": "research"
-    },
-    "sickn33/agentic-awesome-skills": {
-      "stars": 46266,
-      "forks": 6744,
-      "category": "curated"
     },
     "K-Dense-AI/scientific-agent-skills": {
-      "stars": 44387,
-      "forks": 4028,
+      "stars": 55750,
+      "forks": 4907,
       "category": "curated"
     },
-    "Yuan1z0825/nature-skills": {
-      "stars": 40827,
-      "forks": 2219,
+    "Imbad0202/academic-research-skills": {
+      "stars": 54956,
+      "forks": 4190,
       "category": "research"
     },
-    "VoltAgent/awesome-agent-skills": {
-      "stars": 34071,
-      "forks": 3606,
+    "Yuan1z0825/nature-skills": {
+      "stars": 51802,
+      "forks": 2689,
+      "category": "research"
+    },
+    "kepano/obsidian-skills": {
+      "stars": 50595,
+      "forks": 3577,
+      "category": "official"
+    },
+    "sickn33/agentic-awesome-skills": {
+      "stars": 49015,
+      "forks": 7114,
       "category": "curated"
     },
     "vercel-labs/skills": {
-      "stars": 31358,
-      "forks": 2672,
+      "stars": 37698,
+      "forks": 3259,
       "category": "official"
     },
+    "VoltAgent/awesome-agent-skills": {
+      "stars": 36745,
+      "forks": 4045,
+      "category": "curated"
+    },
     "vercel-labs/agent-skills": {
-      "stars": 31056,
-      "forks": 2743,
+      "stars": 33378,
+      "forks": 2926,
       "category": "official"
     },
     "davila7/claude-code-templates": {
-      "stars": 30590,
-      "forks": 3453,
+      "stars": 33055,
+      "forks": 3842,
       "category": "official"
     },
-    "phuryn/pm-skills": {
-      "stars": 26203,
-      "forks": 2798,
+    "alirezarezvani/claude-skills": {
+      "stars": 29146,
+      "forks": 4046,
       "category": "curated"
     },
     "op7418/guizang-ppt-skill": {
-      "stars": 26093,
-      "forks": 1831,
+      "stars": 29120,
+      "forks": 1998,
       "category": "visualization"
     },
-    "alirezarezvani/claude-skills": {
-      "stars": 25829,
-      "forks": 3638,
+    "phuryn/pm-skills": {
+      "stars": 27614,
+      "forks": 2854,
       "category": "curated"
     },
     "agentskills/agentskills": {
-      "stars": 25226,
-      "forks": 1889,
+      "stars": 26864,
+      "forks": 1988,
       "category": "official"
     },
     "KKKKhazix/khazix-skills": {
-      "stars": 20588,
-      "forks": 2197,
+      "stars": 21818,
+      "forks": 2301,
       "category": "curated"
     },
     "wanshuiyin/Auto-claude-code-research-in-sleep": {
-      "stars": 16013,
-      "forks": 1375,
+      "stars": 18475,
+      "forks": 1512,
       "category": "automated"
     },
     "aiming-lab/AutoResearchClaw": {
-      "stars": 14398,
-      "forks": 1669,
+      "stars": 14802,
+      "forks": 1715,
       "category": "automated"
     },
     "Orchestra-Research/AI-Research-SKILLs": {
-      "stars": 12545,
-      "forks": 906,
+      "stars": 14191,
+      "forks": 990,
       "category": "curated"
     },
     "Imbad0202/academic-research-skills-codex": {
-      "stars": 10568,
-      "forks": 474,
+      "stars": 13896,
+      "forks": 604,
       "category": "research"
     },
     "HKUSTDial/Supervisor-Skills": {
-      "stars": 6837,
-      "forks": 435,
+      "stars": 11391,
+      "forks": 677,
       "category": "research"
     },
     "Master-cai/Research-Paper-Writing-Skills": {
-      "stars": 6720,
-      "forks": 321,
-      "category": "research"
-    },
-    "Galaxy-Dawn/claude-scholar": {
-      "stars": 5428,
-      "forks": 422,
+      "stars": 8001,
+      "forks": 373,
       "category": "research"
     },
     "WUBING2023/PaperSpine": {
-      "stars": 5207,
-      "forks": 203,
+      "stars": 6155,
+      "forks": 247,
       "category": "research"
     },
-    "ahmetbersoz/chatgpt-prompts-for-academic-writing": {
-      "stars": 4932,
-      "forks": 396,
+    "Galaxy-Dawn/claude-scholar": {
+      "stars": 5964,
+      "forks": 467,
       "category": "research"
-    },
-    "coleam00/excalidraw-diagram-skill": {
-      "stars": 4756,
-      "forks": 541,
-      "category": "visualization"
     },
     "zLanqing/codex-claude-academic-skills": {
-      "stars": 3757,
-      "forks": 211,
+      "stars": 5566,
+      "forks": 294,
+      "category": "research"
+    },
+    "aipoch/open-science": {
+      "stars": 5418,
+      "forks": 549,
+      "category": "workbench"
+    },
+    "coleam00/excalidraw-diagram-skill": {
+      "stars": 5159,
+      "forks": 589,
+      "category": "visualization"
+    },
+    "ahmetbersoz/chatgpt-prompts-for-academic-writing": {
+      "stars": 5030,
+      "forks": 400,
       "category": "research"
     },
     "brycewang-stanford/Auto-Empirical-Research-Skills": {
-      "stars": 3753,
-      "forks": 473,
+      "stars": 4878,
+      "forks": 567,
+      "category": "research"
+    },
+    "Adkid-Zephyr/anti-defensive-writing-Skill": {
+      "stars": 4729,
+      "forks": 109,
       "category": "research"
     },
     "synthetic-sciences/openscience": {
-      "stars": 3555,
-      "forks": 473,
+      "stars": 4322,
+      "forks": 545,
       "category": "workbench"
-    },
-    "markdown-viewer/skills": {
-      "stars": 3302,
-      "forks": 189,
-      "category": "visualization"
     },
     "foryourhealth111-pixel/Vibe-Skills": {
-      "stars": 3246,
-      "forks": 275,
-      "category": "workbench"
-    },
-    "OpenNSWM-Lab/FAROS": {
-      "stars": 3038,
-      "forks": 391,
-      "category": "research"
-    },
-    "google-deepmind/science-skills": {
-      "stars": 2998,
-      "forks": 336,
-      "category": "official"
-    },
-    "openags/paper-search-mcp": {
-      "stars": 2610,
-      "forks": 261,
-      "category": "mcp"
-    },
-    "Haojae/scipilot-figure-skill": {
-      "stars": 2284,
-      "forks": 82,
-      "category": "visualization"
-    },
-    "ai4s-research/open-science": {
-      "stars": 1630,
-      "forks": 192,
+      "stars": 3788,
+      "forks": 341,
       "category": "workbench"
     },
     "lynote-ai/humanize-text": {
-      "stars": 1607,
-      "forks": 105,
+      "stars": 3479,
+      "forks": 396,
       "category": "research"
     },
+    "markdown-viewer/skills": {
+      "stars": 3391,
+      "forks": 192,
+      "category": "visualization"
+    },
+    "google-deepmind/science-skills": {
+      "stars": 3380,
+      "forks": 389,
+      "category": "official"
+    },
     "AIScientists-Dev/academic-humanizer": {
-      "stars": 1490,
-      "forks": 133,
+      "stars": 3195,
+      "forks": 233,
+      "category": "research"
+    },
+    "OpenNSWM-Lab/FAROS": {
+      "stars": 3044,
+      "forks": 388,
+      "category": "research"
+    },
+    "openags/paper-search-mcp": {
+      "stars": 2973,
+      "forks": 305,
+      "category": "mcp"
+    },
+    "LigphiDonk/academic-figure-generator": {
+      "stars": 2818,
+      "forks": 134,
+      "category": "visualization"
+    },
+    "Haojae/scipilot-figure-skill": {
+      "stars": 2754,
+      "forks": 100,
+      "category": "visualization"
+    },
+    "HughYau/AcademicForge": {
+      "stars": 2623,
+      "forks": 155,
+      "category": "curated"
+    },
+    "ai4s-research/open-science": {
+      "stars": 2072,
+      "forks": 229,
+      "category": "workbench"
+    },
+    "aipoch/medical-research-skills": {
+      "stars": 2024,
+      "forks": 200,
       "category": "research"
     },
     "lishix520/academic-paper-skills": {
-      "stars": 1281,
+      "stars": 1457,
+      "forks": 153,
+      "category": "research"
+    },
+    "Gabberflast/academic-pptx-skill": {
+      "stars": 1428,
       "forks": 138,
+      "category": "visualization"
+    },
+    "199-biotechnologies/claude-deep-research-skill": {
+      "stars": 1204,
+      "forks": 129,
       "category": "research"
     },
     "OpenLAIR/dr-claw": {
-      "stars": 1092,
-      "forks": 119,
+      "stars": 1176,
+      "forks": 136,
       "category": "workbench"
     },
-    "199-biotechnologies/claude-deep-research-skill": {
-      "stars": 1020,
-      "forks": 112,
-      "category": "research"
+    "LeonChaoX/qinyan-academic-skills": {
+      "stars": 1001,
+      "forks": 91,
+      "category": "curated"
     },
     "luwill/research-skills": {
-      "stars": 833,
-      "forks": 98,
+      "stars": 877,
+      "forks": 105,
       "category": "research"
     },
-    "genomoncology/biomcp": {
-      "stars": 630,
-      "forks": 113,
-      "category": "mcp"
-    },
-    "QJHWC/PaperForge": {
-      "stars": 630,
-      "forks": 97,
+    "ganzhi-black/humanities-thesis-skill": {
+      "stars": 821,
+      "forks": 47,
       "category": "research"
     },
     "hanlulong/econ-writing-skill": {
-      "stars": 596,
-      "forks": 93,
+      "stars": 694,
+      "forks": 110,
+      "category": "research"
+    },
+    "genomoncology/biomcp": {
+      "stars": 670,
+      "forks": 120,
+      "category": "mcp"
+    },
+    "Boom5426/Nature-Paper-Skills": {
+      "stars": 649,
+      "forks": 52,
+      "category": "research"
+    },
+    "QJHWC/PaperForge": {
+      "stars": 638,
+      "forks": 95,
       "category": "research"
     },
     "InternScience/Awesome-Scientific-Skills": {
-      "stars": 547,
-      "forks": 41,
+      "stars": 585,
+      "forks": 49,
+      "category": "curated"
+    },
+    "WenyuChiou/ai-research-skills": {
+      "stars": 542,
+      "forks": 35,
       "category": "curated"
     },
     "alfonso0512/research-writing-skill": {
-      "stars": 429,
-      "forks": 33,
+      "stars": 535,
+      "forks": 45,
       "category": "research"
     },
     "federicodeponte/opendraft": {
-      "stars": 409,
-      "forks": 75,
+      "stars": 523,
+      "forks": 90,
       "category": "research"
     },
     "jamditis/claude-skills-journalism": {
-      "stars": 391,
-      "forks": 65,
+      "stars": 444,
+      "forks": 70,
       "category": "research"
     },
-    "WenyuChiou/ai-research-skills": {
-      "stars": 246,
-      "forks": 16,
-      "category": "curated"
-    },
     "Imbad0202/experiment-agent": {
-      "stars": 190,
-      "forks": 12,
+      "stars": 213,
+      "forks": 14,
       "category": "research"
     },
     "Epsilon617/Codex-Academic-Skills": {
-      "stars": 180,
-      "forks": 8,
+      "stars": 196,
+      "forks": 10,
       "category": "research"
     },
-    "NeuroAIHub/awesome_cognitive_and_neuroscience_skills": {
-      "stars": 37,
-      "forks": 5,
-      "category": "domain-neuro"
-    },
     "YujxZJCN/teaching-skills": {
-      "stars": 27,
-      "forks": 6,
+      "stars": 44,
+      "forks": 7,
       "category": "education"
     },
+    "NeuroAIHub/awesome_cognitive_and_neuroscience_skills": {
+      "stars": 43,
+      "forks": 6,
+      "category": "domain-neuro"
+    },
     "HughYau/neuroforge-skills": {
-      "stars": 6,
+      "stars": 8,
       "forks": 1,
       "category": "domain-neuro"
     },
     "chaobrain/BrainX-skill": {
-      "stars": 1,
-      "forks": 0,
+      "stars": 2,
+      "forks": 1,
       "category": "domain-neuro"
     },
     "lhbzx1984/Light-skills": {
